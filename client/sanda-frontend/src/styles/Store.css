@@ -1,0 +1,155 @@
+.description {
+    display: flex;
+    font-family: Roboto;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-top: 5px;
+    background-color: #e4e4e4;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.products {
+    display: flex;
+    font-family: Roboto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Roboto;
+    margin-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 72px;
+}
+
+h1.products{
+    font-size: 42px;
+}
+
+.dot{
+    width: max-content;
+    font-size: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+   margin-right: 40px;
+}
+
+div.details {
+    margin-top: 0;
+    padding-top: 0;
+    display: grid;
+    grid-auto-flow: column;
+   align-items: center;
+   justify-content: center;
+   width: 1000px;
+}
+
+p.details {
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.productsgrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+    width: 1095px;
+}
+
+.productbox {
+    width: 200px;
+    margin: 5px;
+    display: flex;
+    box-shadow: 0px 0px 10px 3px #C0C0C0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productbox:hover {
+    width: 210px;
+    margin: 0;
+    display: flex;
+    box-shadow: 0px 0px 10px 3px #404040;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.butinstore {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.category{
+    box-shadow: 0px 0px 5px 2px #C0C0C0;
+}
+
+.category:hover{
+    box-shadow: 0px 0px 5px 2px #404040;
+}
+
+.dropdownDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.policies{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.listPolicies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.policDiv{
+    flex-direction: row;
+    display: flex;
+    font-family: Roboto;
+    width: 500px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    border-width: 1px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.removeButton{
+    background-color: darkred;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-color: darkred;
+    border-width: 1px;
+    border-radius: 3px;
+}

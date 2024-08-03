@@ -1,0 +1,354 @@
+2024-06-13 09:59:55 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 09:59:55 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 10:02:30 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 10:02:30 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 11:13:34 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 11:46:40 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 11:54:43 ERROR c.s.s.service.MarketService - get member dto failed for username: idanasis2. Error: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.sadna.sadnamarket.domain.users.MemberDTO["birthDate"])
+2024-06-13 12:00:01 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 12:00:42 ERROR c.s.s.service.MarketService - get member dto failed for username: idanasis2. Error: Cannot invoke "java.time.LocalDate.toString()" because the return value of "com.sadna.sadnamarket.domain.users.Member.getBirthday()" is null
+2024-06-13 12:00:42 ERROR c.s.s.service.MarketService - get member dto failed for username: idanasis2. Error: Cannot invoke "java.time.LocalDate.toString()" because the return value of "com.sadna.sadnamarket.domain.users.Member.getBirthday()" is null
+2024-06-13 12:03:08 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 12:09:17 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 12:37:29 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 13:02:29 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 13:03:52 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 13:03:52 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist
+2024-06-13 13:04:07 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 13:04:07 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist
+2024-06-13 13:07:17 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 13:20:09 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 13:35:36 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 13:38:10 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 15:22:08 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 15:49:41 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 15:59:05 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 16:38:10 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 16:38:20 ERROR c.s.s.domain.auth.AuthFacade - user doesnt exist
+2024-06-13 16:38:20 ERROR c.s.s.service.MarketService - error in login: user doesnt exist
+2024-06-13 16:38:37 ERROR c.s.s.domain.auth.AuthFacade - user doesnt exist
+2024-06-13 16:38:37 ERROR c.s.s.service.MarketService - error in login: user doesnt exist
+2024-06-13 17:17:55 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/sadna/sadnamarket/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.sadna.sadnamarket.SadnaMarketApplication.main(SadnaMarketApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1240)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer$MvcCorsFilter.getMvcCorsFilter(CorsConfigurer.java:116)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.getCorsFilter(CorsConfigurer.java:94)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.configure(CorsConfigurer.java:73)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.configure(CorsConfigurer.java:41)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:376)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:330)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38)
+	at com.sadna.sadnamarket.SecurityConfig.securityFilterChain(SecurityConfig.java:14)
+	at com.sadna.sadnamarket.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$0(<generated>)
+	at com.sadna.sadnamarket.SecurityConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.sadna.sadnamarket.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:665)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1388)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:130)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 45 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:674)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 58 common frames omitted
+2024-06-13 17:49:59 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/sadna/sadnamarket/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.sadna.sadnamarket.SadnaMarketApplication.main(SadnaMarketApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1240)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer$MvcCorsFilter.getMvcCorsFilter(CorsConfigurer.java:116)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.getCorsFilter(CorsConfigurer.java:94)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.configure(CorsConfigurer.java:73)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.configure(CorsConfigurer.java:41)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:376)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:330)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38)
+	at com.sadna.sadnamarket.SecurityConfig.securityFilterChain(SecurityConfig.java:14)
+	at com.sadna.sadnamarket.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$0(<generated>)
+	at com.sadna.sadnamarket.SecurityConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.sadna.sadnamarket.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:665)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1388)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:130)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 45 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:674)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 58 common frames omitted
+2024-06-13 17:50:25 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/sadna/sadnamarket/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.sadna.sadnamarket.SadnaMarketApplication.main(SadnaMarketApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1240)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer$MvcCorsFilter.getMvcCorsFilter(CorsConfigurer.java:116)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.getCorsFilter(CorsConfigurer.java:94)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.configure(CorsConfigurer.java:73)
+	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.configure(CorsConfigurer.java:41)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:376)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:330)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38)
+	at com.sadna.sadnamarket.SecurityConfig.securityFilterChain(SecurityConfig.java:14)
+	at com.sadna.sadnamarket.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$0(<generated>)
+	at com.sadna.sadnamarket.SecurityConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.sadna.sadnamarket.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:665)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1388)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:130)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 45 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userRestController' method 
+com.sadna.sadnamarket.api.UserRestController#getMemberDTO(String, HttpServletRequest)
+to {GET [/api/user/getUserDTO]}: There is already 'userRestController' bean method
+com.sadna.sadnamarket.api.UserRestController#getMemberRoles(String, HttpServletRequest) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:674)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 58 common frames omitted
+2024-06-13 17:52:25 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 19:32:22 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-06-13 19:33:53 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 19:33:53 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist
+2024-06-13 19:35:53 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 19:35:53 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist
+2024-06-13 19:39:48 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 19:39:48 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist
+2024-06-13 19:41:20 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 19:41:20 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist
+2024-06-13 19:42:28 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 19:42:28 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist
+2024-06-13 19:59:29 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 19:59:29 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist
+2024-06-13 20:09:52 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 20:09:52 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist
+2024-06-13 20:10:03 ERROR c.s.s.service.MarketService - error in register: username already exits
+2024-06-13 20:10:13 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 20:10:13 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist
+2024-06-13 20:12:46 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=0 does not exist
+2024-06-13 20:12:46 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 0 does not exist

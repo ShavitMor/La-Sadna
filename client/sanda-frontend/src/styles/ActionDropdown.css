@@ -1,0 +1,55 @@
+.options{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.optionButton{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    height: 50px;
+    width: 200px;
+    background-color: #000049;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: bold;
+    border-color: #000049;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.arrowrotate{
+    transition-property: transform;
+    transition-duration: 150ms;
+    transform: rotate(180deg);
+}
+
+.arrowdefault{
+    transition-property: transform;
+    transition-duration: 150ms;
+    transform: rotate(0deg);
+}
+
+.dropdownButton{
+    margin-bottom: 10px;
+    width: 200px;
+    height: 60px;
+    border-width: 1;
+    border-color: palevioletred;
+    background-color: #c45d0a;
+    box-shadow: 0 0 10px inset palevioletred;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+.closeStore{
+    background-color: #FF4444;
+}
+
+.reopenStore{
+    background-color: #11BB11;
+}

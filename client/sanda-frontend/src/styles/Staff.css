@@ -1,0 +1,188 @@
+.walled{
+    font-family: Roboto;
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    height: 100%;
+}
+
+.managers{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+h1{
+    align-self: center;
+}
+
+.owners{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+.bigStaffRowDivManager{
+    border-right-width: 1px;
+    border-right-color: #A0A0A0;
+    border-right-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #A0A0A0;
+    border-bottom-style: solid;
+    border-radius: 5px;
+}
+
+.bigStaffRowDivOwner{
+    border-left-width: 1px;
+    border-left-color: #A0A0A0;
+    border-left-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #A0A0A0;
+    border-bottom-style: solid;
+    border-radius: 5px;
+}
+
+.staffRow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.staffRowOpen{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom-width: 2px;
+    border-bottom-color: #A0A0A0;
+    justify-content: space-between;
+    border-bottom-style: solid;
+}
+
+.staffText{
+    font-family: Roboto;
+    font-size: 48px;
+}
+
+.addStaff{
+    background-color: #5f11b8;
+    align-self: center;
+    color: white;
+    border-color: #5f11b8;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 25px;
+    width: 200px;
+    height: 50%;
+    text-align: center;
+    padding-top: 2px;
+    margin-top: 10px;
+}
+
+.viewButton{
+    margin-right: 50px;
+    background-color: #11b811;
+    align-self: center;
+    color: white;
+    border-color: #11b811;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 25px;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.viewButton:hover{
+    background-color: #1de01d;
+    border-color: #6ff36f;
+    box-shadow: 0 0 10px inset white;
+}
+
+.staffDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+
+.updatePerms{
+    background-color: #b5c526;
+    align-self: center;
+    color: white;
+    border-color: #b5c526;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 15px;
+    width: 200px;
+    height: 20%;
+    text-align: center;
+}
+
+.updatePerms:disabled{
+    background-color: #ccd675;
+    align-self: center;
+    color: #A0A0A0;
+    border-color: #ccd675;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 15px;
+    width: 200px;
+    height: 20%;
+    text-align: center;
+}
+
+.appointArea{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 2px;
+}
+
+.appointLabel{
+    font-size: 18px;
+    font-family: Roboto;
+    margin-bottom: 5px;
+}
+
+.visible{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.notvisible{
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.sendButton{
+    width: 20%;
+    align-self: flex-end;
+    margin: 5px;
+    font-weight: bold;
+    background-color: #5f11b8;
+    border-color: #5f11b8;
+    border-radius: 5px;
+    border-width: 2px;
+    color: white;
+    border-style: solid;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 2px;
+}

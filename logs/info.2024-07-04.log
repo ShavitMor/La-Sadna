@@ -1,0 +1,42 @@
+2024-07-04 13:51:54 INFO  c.s.s.SadnaMarketApplication - Starting SadnaMarketApplication using Java 17 with PID 16636 (C:\Users\idana\OneDrive\Desktop\μιξεγιν\sadna v3\MarketSystem\code\target\classes started by idana in C:\Users\idana\OneDrive\Desktop\μιξεγιν\sadna v3\MarketSystem)
+2024-07-04 13:51:54 INFO  c.s.s.SadnaMarketApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-04 13:51:56 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-04 13:51:56 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-04 13:51:56 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-04 13:51:56 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-07-04 13:51:56 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-04 13:51:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1927 ms
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.MemoryRepo - Entering MemoryRepo constructor
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting MemoryRepo constructor
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.UserFacade - initilize user fascade
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.UserFacade - finish initilize user fascade
+2024-07-04 13:51:56 INFO  c.s.s.domain.auth.AuthFacade - start-register. username: SM first name=sami, last name=hatuka, email=shawarma@gmail.com phone number=0511111111, birthday=null
+2024-07-04 13:51:56 INFO  c.s.s.domain.auth.PasswordHash - start-hashPassword
+2024-07-04 13:51:56 INFO  c.s.s.domain.auth.PasswordHash - end-hashPassword. returnedValue:$2a$10$bW6pBL27lEd0z1Iq9iHcB.re2.u9a8gRQ5ctl9nZ3CXl6oayngsq.
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.UserFacade - SM try to register 
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.MemoryRepo - Entering store with username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-07-04 13:51:56 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-04 13:51:56 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-04 13:51:56 INFO  c.s.sadnamarket.domain.users.Member - Entering Member constructor with parameters: username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-07-04 13:51:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting Member constructor
+2024-07-04 13:51:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-07-04 13:51:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=SM
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting store
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.UserFacade - SM done register 
+2024-07-04 13:51:56 INFO  c.s.s.domain.auth.AuthFacade - end-register.
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.UserFacade - set system username SM
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.UserFacade - check if member exist SM
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=SM
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-07-04 13:51:56 INFO  c.s.s.domain.users.UserFacade - done set system username SM
+2024-07-04 13:51:57 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-04 13:51:57 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1aed6f0b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b3546a3, org.springframework.security.web.context.SecurityContextHolderFilter@6ce15112, org.springframework.security.web.header.HeaderWriterFilter@2b098563, org.springframework.web.filter.CorsFilter@134c38, org.springframework.security.web.authentication.logout.LogoutFilter@590013c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ba024cb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ac0cdb0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d235635, org.springframework.security.web.access.ExceptionTranslationFilter@3c17bd0b]
+2024-07-04 13:51:57 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-04 13:51:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-07-04 13:51:57 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2024-07-04 13:51:57 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@6c9151c1]]
+2024-07-04 13:51:57 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2024-07-04 13:51:57 INFO  c.s.s.SadnaMarketApplication - Started SadnaMarketApplication in 3.977 seconds (process running for 4.638)
+2024-07-04 13:52:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-04 13:52:00 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-04 13:52:00 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms

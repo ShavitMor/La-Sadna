@@ -1,0 +1,9 @@
+{
+  "sysman": "u1",
+  "db": "jdbc:mysql://sadnadb.c1ueowgcy9zp.eu-west-3.rds.amazonaws.com:3306/sadna?useSSL=true",
+  "supply": "https://damp-lynna-wsep-1984852e.koyeb.app/",
+  "payment": "https://damp-lynna-wsep-1984852e.koyeb.app/",
+  "clear": "on",
+  "state": "state.json"
+}
+  

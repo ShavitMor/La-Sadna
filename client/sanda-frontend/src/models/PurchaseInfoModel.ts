@@ -1,0 +1,15 @@
+export interface PurchaseInfoModel{
+    creditCard: string,
+    digitsOnBack: string,
+    expirationDate: Date,
+    ownerId: string,
+    country: string,
+    city: string,
+    addressLine1: string,
+    addressLine2: string,
+    zipCode: string,
+    ordererName: string,
+    contactPhone: string,
+    contactEmail: string,
+    ordererId: string,
+}

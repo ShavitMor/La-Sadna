@@ -1,0 +1,1508 @@
+2024-06-28 14:05:43 INFO  c.s.s.SadnaMarketApplication - Starting SadnaMarketApplication using Java 17 with PID 5448 (C:\Users\idana\OneDrive\Desktop\μιξεγιν\sadna v3\MarketSystem\code\target\classes started by idana in C:\Users\idana\OneDrive\Desktop\μιξεγιν\sadna v3\MarketSystem)
+2024-06-28 14:05:43 INFO  c.s.s.SadnaMarketApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-28 14:05:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-28 14:05:44 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-28 14:05:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-28 14:05:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-28 14:05:45 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-28 14:05:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1903 ms
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.MemoryRepo - Entering MemoryRepo constructor
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.MemoryRepo - Exiting MemoryRepo constructor
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.UserFacade - initilize user fascade
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.UserFacade - finish initilize user fascade
+2024-06-28 14:05:45 INFO  c.s.s.domain.auth.AuthFacade - start-register. username: SM first name=sami, last name=hatuka, email=shawarma@gmail.com phone number=0511111111, birthday=null
+2024-06-28 14:05:45 INFO  c.s.s.domain.auth.AuthFacade - start-hashPassword
+2024-06-28 14:05:45 INFO  c.s.s.domain.auth.AuthFacade - end-hashPassword. returnedValue:$2a$10$hOGhvoc7Su9t/hXH5UQkyesEFat0FS3EVpcZIBG1RLLJ5iLnaje8a
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.UserFacade - SM try to register 
+2024-06-28 14:05:45 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-06-28 14:05:45 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-06-28 14:05:45 INFO  c.s.sadnamarket.domain.users.Member - Entering Member constructor with parameters: username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-06-28 14:05:45 INFO  c.s.sadnamarket.domain.users.Member - Exiting Member constructor
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.MemoryRepo - Entering store with member=com.sadna.sadnamarket.domain.users.Member@1ea930eb
+2024-06-28 14:05:45 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:05:45 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=SM
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.MemoryRepo - Exiting store
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.UserFacade - SM done register 
+2024-06-28 14:05:45 INFO  c.s.s.domain.auth.AuthFacade - end-register.
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.UserFacade - set system username SM
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.UserFacade - check if member exist SM
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=SM
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:05:45 INFO  c.s.s.domain.users.UserFacade - done set system username SM
+2024-06-28 14:05:46 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-28 14:05:46 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@41582899, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@595814a1, org.springframework.security.web.context.SecurityContextHolderFilter@52f9e8bb, org.springframework.security.web.header.HeaderWriterFilter@f2fb225, org.springframework.web.filter.CorsFilter@7de5871d, org.springframework.security.web.authentication.logout.LogoutFilter@6a96d639, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@240a2619, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28554ac8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49d42faf, org.springframework.security.web.access.ExceptionTranslationFilter@762a10b6]
+2024-06-28 14:05:46 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-28 14:05:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-06-28 14:05:46 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2024-06-28 14:05:46 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@16b7e04a]]
+2024-06-28 14:05:46 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2024-06-28 14:05:46 INFO  c.s.s.SadnaMarketApplication - Started SadnaMarketApplication in 4.19 seconds (process running for 4.775)
+2024-06-28 14:05:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-28 14:05:48 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-28 14:05:48 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-28 14:06:46 INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-06-28 14:08:19 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:08:19 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:08:20 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:08:20 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:08:20 INFO  c.s.s.service.MarketService - guest tries to enter
+2024-06-28 14:08:20 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-06-28 14:08:20 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-06-28 14:08:20 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-06-28 14:08:20 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-06-28 14:08:20 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 1
+2024-06-28 14:08:20 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-06-28 14:08:20 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-06-28 14:08:20 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 1
+2024-06-28 14:08:20 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=1
+2024-06-28 14:08:20 INFO  c.s.s.service.MarketService - guest entered with id 1
+2024-06-28 14:08:47 INFO  c.s.s.service.MarketService - user asisida tries to register
+2024-06-28 14:08:47 INFO  c.s.s.domain.auth.AuthFacade - start-register. username: asisida first name=dd, last name=fffffff, email=asisida@post.bgu.ac.il phone number=045040404, birthday=2024-06-13
+2024-06-28 14:08:47 INFO  c.s.s.domain.auth.AuthFacade - start-hashPassword
+2024-06-28 14:08:47 INFO  c.s.s.domain.auth.AuthFacade - end-hashPassword. returnedValue:$2a$10$s8mJoaz8XV8.QgEHkOa5JuSq.G4YtO5IUU/CKn0uMsU4Z5d6dIMzO
+2024-06-28 14:08:47 INFO  c.s.s.domain.users.UserFacade - asisida try to register 
+2024-06-28 14:08:47 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-06-28 14:08:47 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-06-28 14:08:47 INFO  c.s.sadnamarket.domain.users.Member - Entering Member constructor with parameters: username=asisida, firstName=dd, lastName=fffffff, emailAddress=asisida@post.bgu.ac.il, phoneNumber=045040404, birthDate=2024-06-13
+2024-06-28 14:08:47 INFO  c.s.sadnamarket.domain.users.Member - Exiting Member constructor
+2024-06-28 14:08:47 INFO  c.s.s.domain.users.MemoryRepo - Entering store with member=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:08:47 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:08:47 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=asisida
+2024-06-28 14:08:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting store
+2024-06-28 14:08:47 INFO  c.s.s.domain.users.UserFacade - asisida done register 
+2024-06-28 14:08:47 INFO  c.s.s.domain.auth.AuthFacade - end-register.
+2024-06-28 14:08:47 INFO  c.s.s.service.MarketService - user asisida registered
+2024-06-28 14:08:50 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:08:50 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:08:55 INFO  c.s.s.service.MarketService - user asisida tries to login from guestId=1
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: asisida from guest 1 
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: asisida 
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: asisida 
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - start-isPasswordCorrect. username: asisida 
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - end-isPasswordCorrect. returnedValue:true
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - end-Login.
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - start-generateToken. args: asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - end-auth. token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.UserFacade - asisida login from guest 1
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.UserFacade - field asisida is valid
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=false
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=false
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - getting member cart for asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.IUser - Entering get Cart Items
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Cart - getting cart items
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Cart - got cart items []
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.IUser - exiting get Cart Items: []
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - got member cart for asisida: []
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering getGuest with guestID=1
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting getGuest with result=com.sadna.sadnamarket.domain.users.Guest@66b8e0a1
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.IUser - get cart: com.sadna.sadnamarket.domain.users.Cart@763a4034
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering setCart with userName=asisida, cart=com.sadna.sadnamarket.domain.users.Cart@763a4034
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Member - Entering setCart with cart=com.sadna.sadnamarket.domain.users.Cart@763a4034
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Cart - Entering isEmpty
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Cart - Exiting isEmpty with result=true
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Member - Exiting setCart
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting setCart
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering setLogin with userName=asisida, isLoggedIn=true
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Member - Entering setLogin with isLoggedIn=true
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Member - Exiting setLogin
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting setLogin
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.UserFacade - remove guest 1
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=1
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=1
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasGuest with result=true
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting deleteGuest
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.UserFacade - removed guest 1
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.UserFacade - asisida done login from guest 1
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - end-Login. returnedValue:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:08:55 INFO  c.s.s.service.MarketService - user asisida logged in
+2024-06-28 14:08:55 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:08:55 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:08:55 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:08:55 INFO  c.s.s.service.MarketService - check if asisida is system manager
+2024-06-28 14:08:55 INFO  c.s.s.service.MarketService - get user notifications for asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.UserFacade - check if username is system manager asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.UserFacade - getting notifications for asisida
+2024-06-28 14:08:55 INFO  c.s.s.service.MarketService - finished check if asisida is system manager
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering getNotifications with username=asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Member - Entering getNotifications
+2024-06-28 14:08:55 INFO  c.s.sadnamarket.domain.users.Member - Exiting getNotifications with result={}
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.MemoryRepo - Exiting getNotifications with result=[]
+2024-06-28 14:08:55 INFO  c.s.s.domain.users.UserFacade - got notifications for asisida
+2024-06-28 14:08:55 INFO  c.s.s.service.MarketService - finished get user notifications []
+2024-06-28 14:08:57 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:08:57 INFO  c.s.s.service.MarketService - get user roles for asisida
+2024-06-28 14:08:57 INFO  c.s.s.domain.users.UserFacade - get user roles for asisida
+2024-06-28 14:08:57 INFO  c.s.s.domain.users.MemoryRepo - Entering getUserRolesString with userName=asisida
+2024-06-28 14:08:57 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:08:57 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:08:57 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRolesString
+2024-06-28 14:08:57 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRolesString with result=[]
+2024-06-28 14:08:57 INFO  c.s.s.domain.users.MemoryRepo - Exiting getUserRolesString with result=[]
+2024-06-28 14:08:57 INFO  c.s.s.domain.users.UserFacade - got user roles for asisida: []
+2024-06-28 14:08:57 INFO  c.s.s.service.MarketService - finished get user roles []
+2024-06-28 14:09:24 INFO  c.s.s.service.MarketService - user idanasis2 tries to register
+2024-06-28 14:09:24 INFO  c.s.s.domain.auth.AuthFacade - start-register. username: idanasis2 first name=1212, last name=1212, email=ggggg@gagaga.com phone number=5000303030, birthday=2024-06-07
+2024-06-28 14:09:24 INFO  c.s.s.domain.auth.AuthFacade - start-hashPassword
+2024-06-28 14:09:24 INFO  c.s.s.domain.auth.AuthFacade - end-hashPassword. returnedValue:$2a$10$16AKNR8IIAHzWWY12/08rOS4YdudAJMld7PxqgUyYJyGqaDvAAhZe
+2024-06-28 14:09:24 INFO  c.s.s.domain.users.UserFacade - idanasis2 try to register 
+2024-06-28 14:09:24 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-06-28 14:09:24 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-06-28 14:09:24 INFO  c.s.sadnamarket.domain.users.Member - Entering Member constructor with parameters: username=idanasis2, firstName=1212, lastName=1212, emailAddress=ggggg@gagaga.com, phoneNumber=5000303030, birthDate=2024-06-07
+2024-06-28 14:09:24 INFO  c.s.sadnamarket.domain.users.Member - Exiting Member constructor
+2024-06-28 14:09:24 INFO  c.s.s.domain.users.MemoryRepo - Entering store with member=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:09:24 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:09:24 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis2
+2024-06-28 14:09:24 INFO  c.s.s.domain.users.MemoryRepo - Exiting store
+2024-06-28 14:09:24 INFO  c.s.s.domain.users.UserFacade - idanasis2 done register 
+2024-06-28 14:09:24 INFO  c.s.s.domain.auth.AuthFacade - end-register.
+2024-06-28 14:09:24 INFO  c.s.s.service.MarketService - user idanasis2 registered
+2024-06-28 14:09:25 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:09:25 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:09:27 INFO  c.s.s.service.MarketService - user idanasis2 tries to login from guestId=1
+2024-06-28 14:09:27 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: idanasis2 from guest 1 
+2024-06-28 14:09:27 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: idanasis2 
+2024-06-28 14:09:27 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: idanasis2 
+2024-06-28 14:09:27 INFO  c.s.s.domain.auth.AuthFacade - start-isPasswordCorrect. username: idanasis2 
+2024-06-28 14:09:27 INFO  c.s.s.domain.auth.AuthFacade - end-isPasswordCorrect. returnedValue:true
+2024-06-28 14:09:27 INFO  c.s.s.domain.auth.AuthFacade - end-Login.
+2024-06-28 14:09:27 INFO  c.s.s.domain.auth.AuthFacade - start-generateToken. args: idanasis2
+2024-06-28 14:09:27 INFO  c.s.s.domain.auth.AuthFacade - end-auth. token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5NjcsImV4cCI6MTcxOTY1OTM2N30.lqYbsHmbt-LGS4M93waNA3-_WDPpFuLOBwK8YhAZ8xg
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.UserFacade - idanasis2 login from guest 1
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.UserFacade - field idanasis2 is valid
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:09:27 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:09:27 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=false
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=false
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.MemoryRepo - getting member cart for idanasis2
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:09:27 INFO  c.s.sadnamarket.domain.users.IUser - Entering get Cart Items
+2024-06-28 14:09:27 INFO  c.s.sadnamarket.domain.users.Cart - getting cart items
+2024-06-28 14:09:27 INFO  c.s.sadnamarket.domain.users.Cart - got cart items []
+2024-06-28 14:09:27 INFO  c.s.sadnamarket.domain.users.IUser - exiting get Cart Items: []
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.MemoryRepo - got member cart for idanasis2: []
+2024-06-28 14:09:27 INFO  c.s.s.domain.users.MemoryRepo - Entering getGuest with guestID=1
+2024-06-28 14:09:31 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:09:31 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:09:45 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:09:45 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:09:45 INFO  c.s.s.service.MarketService - guest tries to enter
+2024-06-28 14:09:45 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-06-28 14:09:45 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-06-28 14:09:45 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-06-28 14:09:45 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-06-28 14:09:45 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 2
+2024-06-28 14:09:45 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-06-28 14:09:45 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-06-28 14:09:45 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 2
+2024-06-28 14:09:45 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=2
+2024-06-28 14:09:45 INFO  c.s.s.service.MarketService - guest entered with id 2
+2024-06-28 14:09:46 INFO  c.s.s.service.MarketService - user idanasis2 tries to login from guestId=2
+2024-06-28 14:09:46 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: idanasis2 from guest 2 
+2024-06-28 14:09:46 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: idanasis2 
+2024-06-28 14:09:46 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: idanasis2 
+2024-06-28 14:09:46 INFO  c.s.s.domain.auth.AuthFacade - start-isPasswordCorrect. username: idanasis2 
+2024-06-28 14:09:47 INFO  c.s.s.domain.auth.AuthFacade - end-isPasswordCorrect. returnedValue:true
+2024-06-28 14:09:47 INFO  c.s.s.domain.auth.AuthFacade - end-Login.
+2024-06-28 14:09:47 INFO  c.s.s.domain.auth.AuthFacade - start-generateToken. args: idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.auth.AuthFacade - end-auth. token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.UserFacade - idanasis2 login from guest 2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.UserFacade - field idanasis2 is valid
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=false
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=false
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - getting member cart for idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.IUser - Entering get Cart Items
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Cart - getting cart items
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Cart - got cart items []
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.IUser - exiting get Cart Items: []
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - got member cart for idanasis2: []
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering getGuest with guestID=2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting getGuest with result=com.sadna.sadnamarket.domain.users.Guest@1dec738f
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.IUser - get cart: com.sadna.sadnamarket.domain.users.Cart@55356ae5
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering setCart with userName=idanasis2, cart=com.sadna.sadnamarket.domain.users.Cart@55356ae5
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Member - Entering setCart with cart=com.sadna.sadnamarket.domain.users.Cart@55356ae5
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Cart - Entering isEmpty
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Cart - Exiting isEmpty with result=true
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Member - Exiting setCart
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting setCart
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering setLogin with userName=idanasis2, isLoggedIn=true
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Member - Entering setLogin with isLoggedIn=true
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Member - Exiting setLogin
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting setLogin
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasGuest with result=true
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting deleteGuest
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.UserFacade - removed guest 2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.UserFacade - idanasis2 done login from guest 2
+2024-06-28 14:09:47 INFO  c.s.s.domain.auth.AuthFacade - end-Login. returnedValue:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:09:47 INFO  c.s.s.service.MarketService - user idanasis2 logged in
+2024-06-28 14:09:47 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:09:47 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:09:47 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:09:47 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:09:47 INFO  c.s.s.service.MarketService - get user notifications for idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.UserFacade - getting notifications for idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering getNotifications with username=idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Member - Entering getNotifications
+2024-06-28 14:09:47 INFO  c.s.sadnamarket.domain.users.Member - Exiting getNotifications with result={}
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.MemoryRepo - Exiting getNotifications with result=[]
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.UserFacade - got notifications for idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.service.MarketService - check if idanasis2 is system manager
+2024-06-28 14:09:47 INFO  c.s.s.service.MarketService - finished get user notifications []
+2024-06-28 14:09:47 INFO  c.s.s.domain.users.UserFacade - check if username is system manager idanasis2
+2024-06-28 14:09:47 INFO  c.s.s.service.MarketService - finished check if idanasis2 is system manager
+2024-06-28 14:09:54 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:09:54 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:10:00 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:00 INFO  c.s.s.service.MarketService - get user roles for idanasis2
+2024-06-28 14:10:00 INFO  c.s.s.domain.users.UserFacade - get user roles for idanasis2
+2024-06-28 14:10:00 INFO  c.s.s.domain.users.MemoryRepo - Entering getUserRolesString with userName=idanasis2
+2024-06-28 14:10:00 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:00 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:00 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRolesString
+2024-06-28 14:10:00 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRolesString with result=[]
+2024-06-28 14:10:00 INFO  c.s.s.domain.users.MemoryRepo - Exiting getUserRolesString with result=[]
+2024-06-28 14:10:00 INFO  c.s.s.domain.users.UserFacade - got user roles for idanasis2: []
+2024-06-28 14:10:00 INFO  c.s.s.service.MarketService - finished get user roles []
+2024-06-28 14:10:04 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - add Store founder to idanasis2 in 0 
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.StoreOwner - Entering StoreOwner constructor with storeId=0 and apointee=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.StoreOwner - Exiting StoreOwner constructor
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.StoreFounder - Entering StoreFounder constructor with storeId=0 and apointee=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.StoreFounder - Exiting StoreFounder constructor
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.StoreFounder - Entering toString
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.StoreFounder - Exiting toString with result=store founder
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting toString with result=store founderstore founder
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.StoreFounder - Entering toString
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.StoreFounder - Exiting toString with result=store founder
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store founderstore founder
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting addRole
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting addRole
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - done add Store founder to idanasis2 in 0 
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:04 INFO  c.s.s.service.MarketService - User idanasis2 created a store with id 0.
+2024-06-28 14:10:05 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:05 INFO  c.s.s.service.MarketService - get user roles for idanasis2
+2024-06-28 14:10:05 INFO  c.s.s.domain.users.UserFacade - get user roles for idanasis2
+2024-06-28 14:10:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getUserRolesString with userName=idanasis2
+2024-06-28 14:10:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:05 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRolesString
+2024-06-28 14:10:05 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:10:05 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:10:05 INFO  c.s.s.domain.users.StoreFounder - Entering toString
+2024-06-28 14:10:05 INFO  c.s.s.domain.users.StoreFounder - Exiting toString with result=store founder
+2024-06-28 14:10:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@3b6b1b32]
+2024-06-28 14:10:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@3b6b1b32]
+2024-06-28 14:10:05 INFO  c.s.s.domain.users.UserFacade - got user roles for idanasis2: [com.sadna.sadnamarket.domain.users.UserRoleDTO@3b6b1b32]
+2024-06-28 14:10:05 INFO  c.s.s.service.MarketService - finished get user roles [com.sadna.sadnamarket.domain.users.UserRoleDTO@3b6b1b32]
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: 0.0, category: null, min rank: 3.0
+2024-06-28 14:10:07 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:10:07 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:10:07 INFO  c.s.s.service.MarketService - A user got store info of store 0.
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.service.MarketService - got discount descriptions for store 0.
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.service.MarketService - got buy policy descriptions for store 0.
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.service.MarketService - idanasis2 checked if idanasis2 has REMOVE_BUY_POLICY permission in store 0.
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.service.MarketService - idanasis2 checked if idanasis2 has REMOVE_DISCOUNT_POLICY permission in store 0.
+2024-06-28 14:10:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:07 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: -1.0, category: , min rank: 3.0
+2024-06-28 14:10:07 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:10:07 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:10:14 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:14 INFO  c.s.s.service.MarketService - idanasis2 checked if idanasis2 has VIEW_ROLES permission in store 0.
+2024-06-28 14:10:14 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:14 INFO  c.s.s.service.MarketService - User idanasis2 got managers of store 0.
+2024-06-28 14:10:14 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:14 INFO  c.s.s.domain.users.UserFacade - get memberDTO for idanasis2
+2024-06-28 14:10:14 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:10:14 INFO  c.s.s.domain.users.UserFacade - field idanasis2 is valid
+2024-06-28 14:10:14 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=idanasis2
+2024-06-28 14:10:14 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:14 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis2
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=1212
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=1212
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=ggggg@gagaga.com
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=5000303030
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:10:14 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-07
+2024-06-28 14:10:14 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@fc438cf
+2024-06-28 14:10:14 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for idanasis2
+2024-06-28 14:10:14 INFO  c.s.s.service.MarketService - User idanasis2 got owners of store 0.
+2024-06-28 14:10:27 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis2
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis2
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis2
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - check if member exist asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - idanasis2 try to add owner request to asisida for store 0
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering addOwnerRequest with senderName=idanasis2, userFacade=com.sadna.sadnamarket.domain.users.UserFacade@34b44aa4, userName=asisida, store_id=0
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Entering addOwnerRequest with userFacade=com.sadna.sadnamarket.domain.users.UserFacade@34b44aa4, userName=asisida, store_id=0
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Entering getRoleOfStore with store_id=0
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRoles
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.StoreFounder - Entering toString
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.StoreFounder - Exiting toString with result=store founder
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store founderstore founder]
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.StoreFounder - Entering toString
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.StoreFounder - Exiting toString with result=store founder
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store founderstore founder
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.StoreOwner - Entering getApointee
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.StoreOwner - Exiting getApointee with result=idanasis2
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.StoreOwner - Entering sendRequest with senderName=idanasis2, sentName=asisida, and reqType=Owner
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - add request from idanasis2 to asisida for store 0 with type Owner
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Entering getRequest with senderName=idanasis2, storeId=0, reqType=Owner
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Entering hasRoleInStore with store_id=0
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRoles
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRoles with result=[]
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Exiting hasRoleInStore with result=false
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.Notification - Entering Notification constructor with msg=You got appointment request
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.Notification - Exiting Notification constructor
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Request - Entering Request constructor with senderName=idanasis2, msg=You got appointment request, storeId=0, role=Owner
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Request - Exiting Request constructor
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Exiting getRequest
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.Notification - Entering getMessage
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.Notification - Exiting getMessage with result=You got appointment request
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.Notification - Entering getDate
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.Notification - Exiting getDate with result=2024-06-28T14:10:27.192379400
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Request - Entering getSender
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Request - Exiting getSender with result=idanasis2
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Request - Entering getStoreId
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Request - Exiting getStoreId with result=0
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Request - Entering getRole
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Request - Exiting getRole with result=Owner
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - added request from idanasis2 to asisida for store 0 with type Owner
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.StoreOwner - Exiting sendRequest
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Exiting addOwnerRequest
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting addOwnerRequest with result=NotificationDTO{message='You got appointment request', date=2024-06-28 14:10}
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - idanasis2 added owner request to asisida for store 0
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - check for login for member asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - check if member exist asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - checked for login for member asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - check for login for member asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - check if member exist asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.UserFacade - checked for login for member asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:27 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:27 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:27 INFO  c.s.s.service.MarketService - User idanasis2 nominated User asisida as owner of store 0.
+2024-06-28 14:10:31 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:31 INFO  c.s.s.service.MarketService - get user notifications for asisida
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.UserFacade - getting notifications for asisida
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.MemoryRepo - Entering getNotifications with username=asisida
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:10:31 INFO  c.s.sadnamarket.domain.users.Member - Entering getNotifications
+2024-06-28 14:10:31 INFO  c.s.sadnamarket.domain.users.Request - Entering toString
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.Notification - Entering toString
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.Notification - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:10:27.192379400
+2024-06-28 14:10:31 INFO  c.s.sadnamarket.domain.users.Request - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:10:27.192379400 from store 0 from user: idanasis2 as Owner
+2024-06-28 14:10:31 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:10:27.192379400 from store 0 from user: idanasis2 as Ownergot message: You got appointment request on: 2024-06-28T14:10:27.192379400 from store 0 from user: idanasis2 as Owner}
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.Notification - Entering getMessage
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.Notification - Exiting getMessage with result=You got appointment request
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.Notification - Entering getDate
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.Notification - Exiting getDate with result=2024-06-28T14:10:27.192379400
+2024-06-28 14:10:31 INFO  c.s.sadnamarket.domain.users.Request - Entering getSender
+2024-06-28 14:10:31 INFO  c.s.sadnamarket.domain.users.Request - Exiting getSender with result=idanasis2
+2024-06-28 14:10:31 INFO  c.s.sadnamarket.domain.users.Request - Entering getStoreId
+2024-06-28 14:10:31 INFO  c.s.sadnamarket.domain.users.Request - Exiting getStoreId with result=0
+2024-06-28 14:10:31 INFO  c.s.sadnamarket.domain.users.Request - Entering getRole
+2024-06-28 14:10:31 INFO  c.s.sadnamarket.domain.users.Request - Exiting getRole with result=Owner
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.MemoryRepo - Exiting getNotifications with result=[NotificationDTO{message='You got appointment request', date=2024-06-28 14:10}]
+2024-06-28 14:10:31 INFO  c.s.s.domain.users.UserFacade - got notifications for asisida
+2024-06-28 14:10:31 INFO  c.s.s.service.MarketService - finished get user notifications [NotificationDTO{message='You got appointment request', date=2024-06-28 14:10}]
+2024-06-28 14:10:33 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:33 INFO  c.s.s.service.MarketService - Accepting request for acceptingName: asisida, requestID: 1
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.UserFacade - asisida accept request id: 1
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering getRequest with acceptingName=asisida, requestID=1
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Entering getRequest with request_id=1
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Entering toString
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.Notification - Entering toString
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.Notification - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:10:27.192379400
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:10:27.192379400 from store 0 from user: idanasis2 as Owner
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:10:27.192379400 from store 0 from user: idanasis2 as Ownergot message: You got appointment request on: 2024-06-28T14:10:27.192379400 from store 0 from user: idanasis2 as Owner
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Entering toString
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.Notification - Entering toString
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.Notification - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:10:27.192379400
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:10:27.192379400 from store 0 from user: idanasis2 as Owner
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:10:27.192379400 from store 0 from user: idanasis2 as Ownergot message: You got appointment request on: 2024-06-28T14:10:27.192379400 from store 0 from user: idanasis2 as Owner
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Entering getStoreId
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Exiting getStoreId with result=0
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering accept with acceptingName=asisida, requestID=1
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Entering accept with requestID=1
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Entering accept with accepting=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Entering acceptOwner with accepting=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreOwner - Entering StoreOwner constructor with storeId=0 and apointee=idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreOwner - Exiting StoreOwner constructor
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store ownerstore owner
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Exiting addRole
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Exiting acceptOwner
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Exiting accept
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Exiting accept
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting accept
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Entering getRole
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Exiting getRole with result=Owner
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Entering getSender
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Request - Exiting getSender with result=idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering addApointer with apointer=idanasis2, acceptingName=asisida, storeId=0
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Entering addApointer with apointed=asisida, storeId=0
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Entering getRoleOfStore with store_id=0
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRoles
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreFounder - Entering toString
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreFounder - Exiting toString with result=store founder
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store founderstore founder]
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreFounder - Entering toString
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreFounder - Exiting toString with result=store founder
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store founderstore founder
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreOwner - Entering addAppointers with apointee=asisida
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.StoreOwner - Exiting addAppointers
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Exiting addApointer
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting addApointer
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.UserFacade - idanasis2 got notification User asisida accepted request for Owner in 0
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering addNotification with userName=idanasis2, msg=User asisida accepted request for Owner in 0
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Entering addNotification with message=User asisida accepted request for Owner in 0
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.Notification - Entering Notification constructor with msg=User asisida accepted request for Owner in 0
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.Notification - Exiting Notification constructor
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Exiting addNotification
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.Notification - Entering getMessage
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.Notification - Exiting getMessage with result=User asisida accepted request for Owner in 0
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.Notification - Entering getDate
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.Notification - Exiting getDate with result=2024-06-28T14:10:33.714430100
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting addNotification with result=NotificationDTO{message='User asisida accepted request for Owner in 0', date=2024-06-28 14:10}
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:10:33 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:10:33 INFO  c.s.s.domain.users.UserFacade - asisida accepted request id: 1
+2024-06-28 14:10:33 INFO  c.s.s.service.MarketService - Accept request successful for acceptingName: asisida, requestID: 1
+2024-06-28 14:10:36 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:36 INFO  c.s.s.service.MarketService - get user roles for asisida
+2024-06-28 14:10:36 INFO  c.s.s.domain.users.UserFacade - get user roles for asisida
+2024-06-28 14:10:36 INFO  c.s.s.domain.users.MemoryRepo - Entering getUserRolesString with userName=asisida
+2024-06-28 14:10:36 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:10:36 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:10:36 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRolesString
+2024-06-28 14:10:36 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:10:36 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:10:36 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:10:36 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:10:36 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@668687e]
+2024-06-28 14:10:36 INFO  c.s.s.domain.users.MemoryRepo - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@668687e]
+2024-06-28 14:10:36 INFO  c.s.s.domain.users.UserFacade - got user roles for asisida: [com.sadna.sadnamarket.domain.users.UserRoleDTO@668687e]
+2024-06-28 14:10:36 INFO  c.s.s.service.MarketService - finished get user roles [com.sadna.sadnamarket.domain.users.UserRoleDTO@668687e]
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: 0.0, category: null, min rank: 3.0
+2024-06-28 14:10:56 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:10:56 INFO  c.s.s.service.MarketService - A user got store info of store 0.
+2024-06-28 14:10:56 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.service.MarketService - got discount descriptions for store 0.
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.service.MarketService - got buy policy descriptions for store 0.
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.service.MarketService - asisida checked if asisida has REMOVE_BUY_POLICY permission in store 0.
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.service.MarketService - asisida checked if asisida has REMOVE_DISCOUNT_POLICY permission in store 0.
+2024-06-28 14:10:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:10:56 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: -1.0, category: , min rank: 3.0
+2024-06-28 14:10:56 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:10:56 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:11:02 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:11:02 INFO  c.s.s.service.MarketService - asisida checked if asisida has VIEW_ROLES permission in store 0.
+2024-06-28 14:11:02 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:11:02 INFO  c.s.s.service.MarketService - User asisida got managers of store 0.
+2024-06-28 14:11:02 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:11:02 INFO  c.s.s.domain.users.UserFacade - get memberDTO for idanasis2
+2024-06-28 14:11:02 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:11:02 INFO  c.s.s.domain.users.UserFacade - field idanasis2 is valid
+2024-06-28 14:11:02 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=idanasis2
+2024-06-28 14:11:02 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:11:02 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:11:02 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:11:02 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis2
+2024-06-28 14:11:02 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:11:02 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=1212
+2024-06-28 14:11:02 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:11:02 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=1212
+2024-06-28 14:11:02 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:11:02 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=ggggg@gagaga.com
+2024-06-28 14:11:02 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:11:02 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=5000303030
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-07
+2024-06-28 14:11:03 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@5692f08c
+2024-06-28 14:11:03 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for idanasis2
+2024-06-28 14:11:03 INFO  c.s.s.domain.users.UserFacade - get memberDTO for asisida
+2024-06-28 14:11:03 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:11:03 INFO  c.s.s.domain.users.UserFacade - field asisida is valid
+2024-06-28 14:11:03 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=asisida
+2024-06-28 14:11:03 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:11:03 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=asisida
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=dd
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=fffffff
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=asisida@post.bgu.ac.il
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=045040404
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:11:03 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-13
+2024-06-28 14:11:03 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@7285d78f
+2024-06-28 14:11:03 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for asisida
+2024-06-28 14:11:03 INFO  c.s.s.service.MarketService - User asisida got owners of store 0.
+2024-06-28 14:11:10 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:11:32 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:11:32 INFO  c.s.s.service.MarketService - get user notifications for idanasis2
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.UserFacade - getting notifications for idanasis2
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.MemoryRepo - Entering getNotifications with username=idanasis2
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:11:32 INFO  c.s.sadnamarket.domain.users.Member - Entering getNotifications
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.Notification - Entering toString
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.Notification - Exiting toString with result=got message: User asisida accepted request for Owner in 0 on: 2024-06-28T14:10:33.714430100
+2024-06-28 14:11:32 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=got message: User asisida accepted request for Owner in 0 on: 2024-06-28T14:10:33.714430100got message: User asisida accepted request for Owner in 0 on: 2024-06-28T14:10:33.714430100}
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.Notification - Entering getMessage
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.Notification - Exiting getMessage with result=User asisida accepted request for Owner in 0
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.Notification - Entering getDate
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.Notification - Exiting getDate with result=2024-06-28T14:10:33.714430100
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.MemoryRepo - Exiting getNotifications with result=[NotificationDTO{message='User asisida accepted request for Owner in 0', date=2024-06-28 14:10}]
+2024-06-28 14:11:32 INFO  c.s.s.domain.users.UserFacade - got notifications for idanasis2
+2024-06-28 14:11:32 INFO  c.s.s.service.MarketService - finished get user notifications [NotificationDTO{message='User asisida accepted request for Owner in 0', date=2024-06-28 14:10}]
+2024-06-28 14:11:36 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpczIiLCJpYXQiOjE3MTk1NzI5ODcsImV4cCI6MTcxOTY1OTM4N30.Hjqv37wk3uguwBesOaecL6aGQZJyPALoMEEVUCWGFSU
+2024-06-28 14:11:36 INFO  c.s.s.service.MarketService - Okaying notification for username: idanasis2, notifID: 1
+2024-06-28 14:11:36 INFO  c.s.s.domain.users.UserFacade - idanasis2 ok notification id: 1
+2024-06-28 14:11:36 INFO  c.s.s.domain.users.MemoryRepo - Entering reject with rejectingName=idanasis2, requestID=1
+2024-06-28 14:11:36 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:11:36 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:11:36 INFO  c.s.sadnamarket.domain.users.Member - Entering reject with requestID=1
+2024-06-28 14:11:36 INFO  c.s.sadnamarket.domain.users.Member - Exiting reject
+2024-06-28 14:11:36 INFO  c.s.s.domain.users.MemoryRepo - Exiting reject
+2024-06-28 14:11:36 INFO  c.s.s.domain.users.UserFacade - idanasis2 okayed notification id: 1
+2024-06-28 14:11:36 INFO  c.s.s.service.MarketService - Ok notification successful for username: idanasis2, notifID: 1
+2024-06-28 14:11:38 INFO  c.s.s.service.MarketService - idanasis2
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.UserFacade - idanasis2 logout 
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis2
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.MemoryRepo - Entering logout with userName=idanasis2
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:11:38 INFO  c.s.sadnamarket.domain.users.Member - Entering logout
+2024-06-28 14:11:38 INFO  c.s.sadnamarket.domain.users.Member - Entering setLogin with isLoggedIn=false
+2024-06-28 14:11:38 INFO  c.s.sadnamarket.domain.users.Member - Exiting setLogin
+2024-06-28 14:11:38 INFO  c.s.sadnamarket.domain.users.Member - Exiting logout
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.MemoryRepo - Exiting logout
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.UserFacade - idanasis2 done logout
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-06-28 14:11:38 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-06-28 14:11:38 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 3
+2024-06-28 14:11:38 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-06-28 14:11:38 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 3
+2024-06-28 14:11:38 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=3
+2024-06-28 14:11:38 INFO  c.s.s.service.MarketService - idanasis2 logged out
+2024-06-28 14:11:38 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:11:38 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:11:56 INFO  c.s.s.service.MarketService - user idanasis tries to register
+2024-06-28 14:11:56 INFO  c.s.s.domain.auth.AuthFacade - start-register. username: idanasis first name=1212, last name=1212, email=ggggg@gagaga.com phone number=5000303030, birthday=2024-06-02
+2024-06-28 14:11:56 INFO  c.s.s.domain.auth.AuthFacade - start-hashPassword
+2024-06-28 14:11:56 INFO  c.s.s.domain.auth.AuthFacade - end-hashPassword. returnedValue:$2a$10$.ZHpRGFkzRE0u/I.06.Di.O.Woag.R2v1/yqc.RzjMSyxaueIA0Cq
+2024-06-28 14:11:56 INFO  c.s.s.domain.users.UserFacade - idanasis try to register 
+2024-06-28 14:11:56 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-06-28 14:11:56 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-06-28 14:11:56 INFO  c.s.sadnamarket.domain.users.Member - Entering Member constructor with parameters: username=idanasis, firstName=1212, lastName=1212, emailAddress=ggggg@gagaga.com, phoneNumber=5000303030, birthDate=2024-06-02
+2024-06-28 14:11:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting Member constructor
+2024-06-28 14:11:56 INFO  c.s.s.domain.users.MemoryRepo - Entering store with member=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:11:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:11:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis
+2024-06-28 14:11:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting store
+2024-06-28 14:11:56 INFO  c.s.s.domain.users.UserFacade - idanasis done register 
+2024-06-28 14:11:56 INFO  c.s.s.domain.auth.AuthFacade - end-register.
+2024-06-28 14:11:56 INFO  c.s.s.service.MarketService - user idanasis registered
+2024-06-28 14:11:57 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:11:57 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:11:58 INFO  c.s.s.service.MarketService - user idanasis tries to login from guestId=3
+2024-06-28 14:11:58 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: idanasis from guest 3 
+2024-06-28 14:11:58 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: idanasis 
+2024-06-28 14:11:58 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: idanasis 
+2024-06-28 14:11:58 INFO  c.s.s.domain.auth.AuthFacade - start-isPasswordCorrect. username: idanasis 
+2024-06-28 14:11:59 INFO  c.s.s.domain.auth.AuthFacade - end-isPasswordCorrect. returnedValue:true
+2024-06-28 14:11:59 INFO  c.s.s.domain.auth.AuthFacade - end-Login.
+2024-06-28 14:11:59 INFO  c.s.s.domain.auth.AuthFacade - start-generateToken. args: idanasis
+2024-06-28 14:11:59 INFO  c.s.s.domain.auth.AuthFacade - end-auth. token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.UserFacade - idanasis login from guest 3
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.UserFacade - field idanasis is valid
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=false
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=false
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - getting member cart for idanasis
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.IUser - Entering get Cart Items
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Cart - getting cart items
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Cart - got cart items []
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.IUser - exiting get Cart Items: []
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - got member cart for idanasis: []
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering getGuest with guestID=3
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting getGuest with result=com.sadna.sadnamarket.domain.users.Guest@5d418ee6
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.IUser - get cart: com.sadna.sadnamarket.domain.users.Cart@112f222e
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering setCart with userName=idanasis, cart=com.sadna.sadnamarket.domain.users.Cart@112f222e
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Member - Entering setCart with cart=com.sadna.sadnamarket.domain.users.Cart@112f222e
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Cart - Entering isEmpty
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Cart - Exiting isEmpty with result=true
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Member - Exiting setCart
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting setCart
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering setLogin with userName=idanasis, isLoggedIn=true
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Member - Entering setLogin with isLoggedIn=true
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Member - Exiting setLogin
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting setLogin
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.UserFacade - remove guest 3
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=3
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=3
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasGuest with result=true
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting deleteGuest
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.UserFacade - removed guest 3
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.UserFacade - idanasis done login from guest 3
+2024-06-28 14:11:59 INFO  c.s.s.domain.auth.AuthFacade - end-Login. returnedValue:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:11:59 INFO  c.s.s.service.MarketService - user idanasis logged in
+2024-06-28 14:11:59 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:11:59 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:11:59 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:11:59 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:11:59 INFO  c.s.s.service.MarketService - get user notifications for idanasis
+2024-06-28 14:11:59 INFO  c.s.s.service.MarketService - check if idanasis is system manager
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.UserFacade - getting notifications for idanasis
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.UserFacade - check if username is system manager idanasis
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering getNotifications with username=idanasis
+2024-06-28 14:11:59 INFO  c.s.s.service.MarketService - finished check if idanasis is system manager
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Member - Entering getNotifications
+2024-06-28 14:11:59 INFO  c.s.sadnamarket.domain.users.Member - Exiting getNotifications with result={}
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.MemoryRepo - Exiting getNotifications with result=[]
+2024-06-28 14:11:59 INFO  c.s.s.domain.users.UserFacade - got notifications for idanasis
+2024-06-28 14:11:59 INFO  c.s.s.service.MarketService - finished get user notifications []
+2024-06-28 14:12:05 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - check for login for member asisida
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - check if member exist asisida
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=asisida
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - checked for login for member asisida
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=asisida
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - asisida try to add owner request to idanasis for store 0
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering addOwnerRequest with senderName=asisida, userFacade=com.sadna.sadnamarket.domain.users.UserFacade@34b44aa4, userName=idanasis, store_id=0
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Entering addOwnerRequest with userFacade=com.sadna.sadnamarket.domain.users.UserFacade@34b44aa4, userName=idanasis, store_id=0
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Entering getRoleOfStore with store_id=0
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRoles
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store ownerstore owner]
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store ownerstore owner
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.StoreOwner - Entering getApointee
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.StoreOwner - Exiting getApointee with result=idanasis2
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.StoreOwner - Entering sendRequest with senderName=asisida, sentName=idanasis, and reqType=Owner
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - add request from asisida to idanasis for store 0 with type Owner
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Entering getRequest with senderName=asisida, storeId=0, reqType=Owner
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Entering hasRoleInStore with store_id=0
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRoles
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRoles with result=[]
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting hasRoleInStore with result=false
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.Notification - Entering Notification constructor with msg=You got appointment request
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.Notification - Exiting Notification constructor
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Request - Entering Request constructor with senderName=asisida, msg=You got appointment request, storeId=0, role=Owner
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Request - Exiting Request constructor
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting getRequest
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.Notification - Entering getMessage
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.Notification - Exiting getMessage with result=You got appointment request
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.Notification - Entering getDate
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.Notification - Exiting getDate with result=2024-06-28T14:12:05.389944900
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Request - Entering getSender
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Request - Exiting getSender with result=asisida
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Request - Entering getStoreId
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Request - Exiting getStoreId with result=0
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Request - Entering getRole
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Request - Exiting getRole with result=Owner
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - added request from asisida to idanasis for store 0 with type Owner
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.StoreOwner - Exiting sendRequest
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting addOwnerRequest
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting addOwnerRequest with result=NotificationDTO{message='You got appointment request', date=2024-06-28 14:12}
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - asisida added owner request to idanasis for store 0
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - check for login for member idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - check if member exist idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.UserFacade - checked for login for member idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:12:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:12:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:12:05 INFO  c.s.s.service.MarketService - User asisida nominated User idanasis as owner of store 0.
+2024-06-28 14:12:09 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:12:09 INFO  c.s.s.service.MarketService - get user notifications for idanasis
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.UserFacade - getting notifications for idanasis
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.MemoryRepo - Entering getNotifications with username=idanasis
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:09 INFO  c.s.sadnamarket.domain.users.Member - Entering getNotifications
+2024-06-28 14:12:09 INFO  c.s.sadnamarket.domain.users.Request - Entering toString
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.Notification - Entering toString
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.Notification - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:12:05.389944900
+2024-06-28 14:12:09 INFO  c.s.sadnamarket.domain.users.Request - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:12:05.389944900 from store 0 from user: asisida as Owner
+2024-06-28 14:12:09 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:12:05.389944900 from store 0 from user: asisida as Ownergot message: You got appointment request on: 2024-06-28T14:12:05.389944900 from store 0 from user: asisida as Owner}
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.Notification - Entering getMessage
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.Notification - Exiting getMessage with result=You got appointment request
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.Notification - Entering getDate
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.Notification - Exiting getDate with result=2024-06-28T14:12:05.389944900
+2024-06-28 14:12:09 INFO  c.s.sadnamarket.domain.users.Request - Entering getSender
+2024-06-28 14:12:09 INFO  c.s.sadnamarket.domain.users.Request - Exiting getSender with result=asisida
+2024-06-28 14:12:09 INFO  c.s.sadnamarket.domain.users.Request - Entering getStoreId
+2024-06-28 14:12:09 INFO  c.s.sadnamarket.domain.users.Request - Exiting getStoreId with result=0
+2024-06-28 14:12:09 INFO  c.s.sadnamarket.domain.users.Request - Entering getRole
+2024-06-28 14:12:09 INFO  c.s.sadnamarket.domain.users.Request - Exiting getRole with result=Owner
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.MemoryRepo - Exiting getNotifications with result=[NotificationDTO{message='You got appointment request', date=2024-06-28 14:12}]
+2024-06-28 14:12:09 INFO  c.s.s.domain.users.UserFacade - got notifications for idanasis
+2024-06-28 14:12:09 INFO  c.s.s.service.MarketService - finished get user notifications [NotificationDTO{message='You got appointment request', date=2024-06-28 14:12}]
+2024-06-28 14:12:10 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:12:10 INFO  c.s.s.service.MarketService - Accepting request for acceptingName: idanasis, requestID: 1
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.UserFacade - idanasis accept request id: 1
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering getRequest with acceptingName=idanasis, requestID=1
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Entering getRequest with request_id=1
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Entering toString
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.Notification - Entering toString
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.Notification - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:12:05.389944900
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:12:05.389944900 from store 0 from user: asisida as Owner
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:12:05.389944900 from store 0 from user: asisida as Ownergot message: You got appointment request on: 2024-06-28T14:12:05.389944900 from store 0 from user: asisida as Owner
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Entering toString
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.Notification - Entering toString
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.Notification - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:12:05.389944900
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:12:05.389944900 from store 0 from user: asisida as Owner
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting toString with result=got message: You got appointment request on: 2024-06-28T14:12:05.389944900 from store 0 from user: asisida as Ownergot message: You got appointment request on: 2024-06-28T14:12:05.389944900 from store 0 from user: asisida as Owner
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Entering getStoreId
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Exiting getStoreId with result=0
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering accept with acceptingName=idanasis, requestID=1
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Entering accept with requestID=1
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Entering accept with accepting=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Entering acceptOwner with accepting=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Entering StoreOwner constructor with storeId=0 and apointee=asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Exiting StoreOwner constructor
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store ownerstore owner
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting addRole
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Exiting acceptOwner
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Exiting accept
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting accept
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting accept
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Entering getRole
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Exiting getRole with result=Owner
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Entering getSender
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Request - Exiting getSender with result=asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering addApointer with apointer=asisida, acceptingName=idanasis, storeId=0
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Entering addApointer with apointed=idanasis, storeId=0
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Entering getRoleOfStore with store_id=0
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRoles
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store ownerstore owner]
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=store ownerstore owner
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Entering addAppointers with apointee=idanasis
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.StoreOwner - Exiting addAppointers
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting addApointer
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting addApointer
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.UserFacade - asisida got notification User idanasis accepted request for Owner in 0
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering addNotification with userName=asisida, msg=User idanasis accepted request for Owner in 0
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Entering addNotification with message=User idanasis accepted request for Owner in 0
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.Notification - Entering Notification constructor with msg=User idanasis accepted request for Owner in 0
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.Notification - Exiting Notification constructor
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting addNotification
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.Notification - Entering getMessage
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.Notification - Exiting getMessage with result=User idanasis accepted request for Owner in 0
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.Notification - Entering getDate
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.Notification - Exiting getDate with result=2024-06-28T14:12:10.985646600
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting addNotification with result=NotificationDTO{message='User idanasis accepted request for Owner in 0', date=2024-06-28 14:12}
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.UserFacade - check for login for member asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.UserFacade - check if member exist asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.UserFacade - checked for login for member asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.UserFacade - check for login for member asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.UserFacade - check if member exist asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.UserFacade - checked for login for member asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-06-28 14:12:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=true
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=true
+2024-06-28 14:12:10 INFO  c.s.s.domain.users.UserFacade - idanasis accepted request id: 1
+2024-06-28 14:12:10 INFO  c.s.s.service.MarketService - Accept request successful for acceptingName: idanasis, requestID: 1
+2024-06-28 14:12:13 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:12:13 INFO  c.s.s.service.MarketService - get user roles for idanasis
+2024-06-28 14:12:13 INFO  c.s.s.domain.users.UserFacade - get user roles for idanasis
+2024-06-28 14:12:13 INFO  c.s.s.domain.users.MemoryRepo - Entering getUserRolesString with userName=idanasis
+2024-06-28 14:12:13 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:12:13 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:13 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRolesString
+2024-06-28 14:12:13 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:12:13 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:12:13 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:12:13 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:12:13 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@59abb42]
+2024-06-28 14:12:13 INFO  c.s.s.domain.users.MemoryRepo - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@59abb42]
+2024-06-28 14:12:13 INFO  c.s.s.domain.users.UserFacade - got user roles for idanasis: [com.sadna.sadnamarket.domain.users.UserRoleDTO@59abb42]
+2024-06-28 14:12:13 INFO  c.s.s.service.MarketService - finished get user roles [com.sadna.sadnamarket.domain.users.UserRoleDTO@59abb42]
+2024-06-28 14:12:19 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:12:19 INFO  c.s.s.service.MarketService - get user notifications for asisida
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.UserFacade - getting notifications for asisida
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.MemoryRepo - Entering getNotifications with username=asisida
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:12:19 INFO  c.s.sadnamarket.domain.users.Member - Entering getNotifications
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.Notification - Entering toString
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.Notification - Exiting toString with result=got message: User idanasis accepted request for Owner in 0 on: 2024-06-28T14:12:10.985646600
+2024-06-28 14:12:19 INFO  c.s.sadnamarket.domain.users.Member - Exiting toString with result=got message: User idanasis accepted request for Owner in 0 on: 2024-06-28T14:12:10.985646600got message: User idanasis accepted request for Owner in 0 on: 2024-06-28T14:12:10.985646600}
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.Notification - Entering getMessage
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.Notification - Exiting getMessage with result=User idanasis accepted request for Owner in 0
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.Notification - Entering getDate
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.Notification - Exiting getDate with result=2024-06-28T14:12:10.985646600
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.MemoryRepo - Exiting getNotifications with result=[NotificationDTO{message='User idanasis accepted request for Owner in 0', date=2024-06-28 14:12}]
+2024-06-28 14:12:19 INFO  c.s.s.domain.users.UserFacade - got notifications for asisida
+2024-06-28 14:12:19 INFO  c.s.s.service.MarketService - finished get user notifications [NotificationDTO{message='User idanasis accepted request for Owner in 0', date=2024-06-28 14:12}]
+2024-06-28 14:12:43 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:12:43 INFO  c.s.s.service.MarketService - get member dto for idanasis
+2024-06-28 14:12:43 INFO  c.s.s.domain.users.UserFacade - get memberDTO for idanasis
+2024-06-28 14:12:43 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:12:43 INFO  c.s.s.domain.users.UserFacade - field idanasis is valid
+2024-06-28 14:12:43 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=idanasis
+2024-06-28 14:12:43 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:12:43 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=1212
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=1212
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=ggggg@gagaga.com
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=5000303030
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:12:43 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-02
+2024-06-28 14:12:43 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@66d0a130
+2024-06-28 14:12:43 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for idanasis
+2024-06-28 14:12:43 INFO  c.s.s.service.MarketService - finished get member dto com.sadna.sadnamarket.domain.users.MemberDTO@66d0a130
+2024-06-28 14:12:48 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:12:48 INFO  c.s.s.service.MarketService - get user roles for idanasis
+2024-06-28 14:12:48 INFO  c.s.s.domain.users.UserFacade - get user roles for idanasis
+2024-06-28 14:12:48 INFO  c.s.s.domain.users.MemoryRepo - Entering getUserRolesString with userName=idanasis
+2024-06-28 14:12:48 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:12:48 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:12:48 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRolesString
+2024-06-28 14:12:48 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:12:48 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:12:48 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:12:48 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:12:48 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@19fca297]
+2024-06-28 14:12:48 INFO  c.s.s.domain.users.MemoryRepo - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@19fca297]
+2024-06-28 14:12:48 INFO  c.s.s.domain.users.UserFacade - got user roles for idanasis: [com.sadna.sadnamarket.domain.users.UserRoleDTO@19fca297]
+2024-06-28 14:12:48 INFO  c.s.s.service.MarketService - finished get user roles [com.sadna.sadnamarket.domain.users.UserRoleDTO@19fca297]
+2024-06-28 14:12:58 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:12:58 INFO  c.s.s.service.MarketService - get user roles for asisida
+2024-06-28 14:12:58 INFO  c.s.s.domain.users.UserFacade - get user roles for asisida
+2024-06-28 14:12:58 INFO  c.s.s.domain.users.MemoryRepo - Entering getUserRolesString with userName=asisida
+2024-06-28 14:12:58 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:12:58 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:12:58 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRolesString
+2024-06-28 14:12:58 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:12:58 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:12:58 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:12:58 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:12:58 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@1275fa73]
+2024-06-28 14:12:58 INFO  c.s.s.domain.users.MemoryRepo - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@1275fa73]
+2024-06-28 14:12:58 INFO  c.s.s.domain.users.UserFacade - got user roles for asisida: [com.sadna.sadnamarket.domain.users.UserRoleDTO@1275fa73]
+2024-06-28 14:12:58 INFO  c.s.s.service.MarketService - finished get user roles [com.sadna.sadnamarket.domain.users.UserRoleDTO@1275fa73]
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: 0.0, category: null, min rank: 3.0
+2024-06-28 14:13:01 INFO  c.s.s.service.MarketService - A user got store info of store 0.
+2024-06-28 14:13:01 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:13:01 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.service.MarketService - got discount descriptions for store 0.
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.service.MarketService - got buy policy descriptions for store 0.
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.service.MarketService - asisida checked if asisida has REMOVE_BUY_POLICY permission in store 0.
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.service.MarketService - asisida checked if asisida has REMOVE_DISCOUNT_POLICY permission in store 0.
+2024-06-28 14:13:01 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:01 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: -1.0, category: , min rank: 3.0
+2024-06-28 14:13:01 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:13:01 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:13:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:07 INFO  c.s.s.service.MarketService - asisida checked if asisida has VIEW_ROLES permission in store 0.
+2024-06-28 14:13:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:07 INFO  c.s.s.service.MarketService - User asisida got managers of store 0.
+2024-06-28 14:13:07 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - get memberDTO for idanasis
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - field idanasis is valid
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=idanasis
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=1212
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=1212
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=ggggg@gagaga.com
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=5000303030
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-02
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@20621ebf
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for idanasis
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - get memberDTO for idanasis2
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - field idanasis2 is valid
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=idanasis2
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis2
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=1212
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=1212
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=ggggg@gagaga.com
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=5000303030
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-07
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@16dd9b9a
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for idanasis2
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - get memberDTO for asisida
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - field asisida is valid
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=asisida
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=asisida
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=dd
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=fffffff
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=asisida@post.bgu.ac.il
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=045040404
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:13:07 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-13
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@7b332f28
+2024-06-28 14:13:07 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for asisida
+2024-06-28 14:13:07 INFO  c.s.s.service.MarketService - User asisida got owners of store 0.
+2024-06-28 14:13:17 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:17 INFO  c.s.s.service.MarketService - get user roles for asisida
+2024-06-28 14:13:17 INFO  c.s.s.domain.users.UserFacade - get user roles for asisida
+2024-06-28 14:13:17 INFO  c.s.s.domain.users.MemoryRepo - Entering getUserRolesString with userName=asisida
+2024-06-28 14:13:17 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:13:17 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:13:17 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRolesString
+2024-06-28 14:13:17 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:13:17 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:13:17 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:13:17 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:13:17 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@15e26d71]
+2024-06-28 14:13:17 INFO  c.s.s.domain.users.MemoryRepo - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@15e26d71]
+2024-06-28 14:13:17 INFO  c.s.s.domain.users.UserFacade - got user roles for asisida: [com.sadna.sadnamarket.domain.users.UserRoleDTO@15e26d71]
+2024-06-28 14:13:17 INFO  c.s.s.service.MarketService - finished get user roles [com.sadna.sadnamarket.domain.users.UserRoleDTO@15e26d71]
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: 0.0, category: null, min rank: 3.0
+2024-06-28 14:13:18 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:13:18 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:13:18 INFO  c.s.s.service.MarketService - A user got store info of store 0.
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.service.MarketService - got discount descriptions for store 0.
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.service.MarketService - got buy policy descriptions for store 0.
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.service.MarketService - asisida checked if asisida has REMOVE_BUY_POLICY permission in store 0.
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.service.MarketService - asisida checked if asisida has REMOVE_DISCOUNT_POLICY permission in store 0.
+2024-06-28 14:13:18 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:18 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: -1.0, category: , min rank: 3.0
+2024-06-28 14:13:18 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:13:18 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:13:35 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:35 INFO  c.s.s.service.MarketService - asisida checked if asisida has VIEW_ROLES permission in store 0.
+2024-06-28 14:13:35 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:35 INFO  c.s.s.service.MarketService - User asisida got managers of store 0.
+2024-06-28 14:13:35 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - get memberDTO for idanasis
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - field idanasis is valid
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=idanasis
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=1212
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=1212
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=ggggg@gagaga.com
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=5000303030
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-02
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@165b2717
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for idanasis
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - get memberDTO for idanasis2
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - field idanasis2 is valid
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=idanasis2
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis2
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=1212
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=1212
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=ggggg@gagaga.com
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=5000303030
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-07
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@1f648287
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for idanasis2
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - get memberDTO for asisida
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - field asisida is valid
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=asisida
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=asisida
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=dd
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=fffffff
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=asisida@post.bgu.ac.il
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=045040404
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:13:35 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-13
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@3888be0d
+2024-06-28 14:13:35 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for asisida
+2024-06-28 14:13:35 INFO  c.s.s.service.MarketService - User asisida got owners of store 0.
+2024-06-28 14:13:41 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:41 INFO  c.s.s.service.MarketService - get user roles for asisida
+2024-06-28 14:13:41 INFO  c.s.s.domain.users.UserFacade - get user roles for asisida
+2024-06-28 14:13:41 INFO  c.s.s.domain.users.MemoryRepo - Entering getUserRolesString with userName=asisida
+2024-06-28 14:13:41 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:13:41 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:13:41 INFO  c.s.sadnamarket.domain.users.Member - Entering getUserRolesString
+2024-06-28 14:13:41 INFO  c.s.s.domain.users.StoreOwner - Entering getStoreId
+2024-06-28 14:13:41 INFO  c.s.s.domain.users.StoreOwner - Exiting getStoreId with result=0
+2024-06-28 14:13:41 INFO  c.s.s.domain.users.StoreOwner - Entering toString
+2024-06-28 14:13:41 INFO  c.s.s.domain.users.StoreOwner - Exiting toString with result=store owner
+2024-06-28 14:13:41 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@24eb7caa]
+2024-06-28 14:13:41 INFO  c.s.s.domain.users.MemoryRepo - Exiting getUserRolesString with result=[com.sadna.sadnamarket.domain.users.UserRoleDTO@24eb7caa]
+2024-06-28 14:13:41 INFO  c.s.s.domain.users.UserFacade - got user roles for asisida: [com.sadna.sadnamarket.domain.users.UserRoleDTO@24eb7caa]
+2024-06-28 14:13:41 INFO  c.s.s.service.MarketService - finished get user roles [com.sadna.sadnamarket.domain.users.UserRoleDTO@24eb7caa]
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.service.MarketService - A user got store info of store 0.
+2024-06-28 14:13:42 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: 0.0, category: null, min rank: 3.0
+2024-06-28 14:13:42 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:13:42 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.service.MarketService - got discount descriptions for store 0.
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.service.MarketService - got buy policy descriptions for store 0.
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.service.MarketService - asisida checked if asisida has REMOVE_BUY_POLICY permission in store 0.
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.service.MarketService - asisida checked if asisida has REMOVE_DISCOUNT_POLICY permission in store 0.
+2024-06-28 14:13:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:13:42 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: -1.0, category: , min rank: 3.0
+2024-06-28 14:13:42 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:13:42 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:14:10 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:14:10 INFO  c.s.s.service.MarketService - Okaying notification for username: asisida, notifID: 2
+2024-06-28 14:14:10 INFO  c.s.s.domain.users.UserFacade - asisida ok notification id: 2
+2024-06-28 14:14:10 INFO  c.s.s.domain.users.MemoryRepo - Entering reject with rejectingName=asisida, requestID=2
+2024-06-28 14:14:10 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:14:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:14:10 INFO  c.s.sadnamarket.domain.users.Member - Entering reject with requestID=2
+2024-06-28 14:14:10 INFO  c.s.sadnamarket.domain.users.Member - Exiting reject
+2024-06-28 14:14:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting reject
+2024-06-28 14:14:10 INFO  c.s.s.domain.users.UserFacade - asisida okayed notification id: 2
+2024-06-28 14:14:10 INFO  c.s.s.service.MarketService - Ok notification successful for username: asisida, notifID: 2
+2024-06-28 14:14:42 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lzaWRhIiwiaWF0IjoxNzE5NTcyOTM1LCJleHAiOjE3MTk2NTkzMzV9.Q0F5du9R2sMXXomYua4XJ_chfljBX_VQaS130DrK-n8
+2024-06-28 14:14:42 INFO  c.s.s.service.MarketService - asisida checked if asisida has ADD_PRODUCTS permission in store 0.
+2024-06-28 14:14:47 INFO  c.s.s.service.MarketService - get top products
+2024-06-28 14:14:47 INFO  c.s.s.service.MarketService - finished get top products
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: 0.0, category: null, min rank: 3.0
+2024-06-28 14:14:53 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:14:53 INFO  c.s.s.service.MarketService - A user got store info of store 0.
+2024-06-28 14:14:53 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.service.MarketService - got discount descriptions for store 0.
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.service.MarketService - got buy policy descriptions for store 0.
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.service.MarketService - idanasis checked if idanasis has REMOVE_BUY_POLICY permission in store 0.
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.service.MarketService - idanasis checked if idanasis has REMOVE_DISCOUNT_POLICY permission in store 0.
+2024-06-28 14:14:53 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:53 INFO  c.s.s.domain.products.ProductFacade - Filtering products with product name: , max price: -1.0, category: , min rank: 3.0
+2024-06-28 14:14:53 INFO  c.s.s.domain.products.ProductFacade - Filtered products retrieved: 0
+2024-06-28 14:14:53 INFO  c.s.s.service.MarketService - A user got products info of store 0.
+2024-06-28 14:14:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:56 INFO  c.s.s.service.MarketService - idanasis checked if idanasis has VIEW_ROLES permission in store 0.
+2024-06-28 14:14:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:56 INFO  c.s.s.service.MarketService - User idanasis got managers of store 0.
+2024-06-28 14:14:56 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZGFuYXNpcyIsImlhdCI6MTcxOTU3MzExOSwiZXhwIjoxNzE5NjU5NTE5fQ.2_JyUeCpZePHCdyZRUfBSp9FXRa5mwkk9pG7PbEXQkM
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - get memberDTO for idanasis
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - field idanasis is valid
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=idanasis
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@12926b63
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=1212
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=1212
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=ggggg@gagaga.com
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=5000303030
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-02
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@5e021aaf
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for idanasis
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - get memberDTO for idanasis2
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - field idanasis2 is valid
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=idanasis2
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=idanasis2
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@34174f3f
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=idanasis2
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=1212
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=1212
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=ggggg@gagaga.com
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=5000303030
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-07
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@10df44ee
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for idanasis2
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - get memberDTO for asisida
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - field asisida is valid
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Entering getMemberDTO with userName=asisida
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=asisida
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@6676575e
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=asisida
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getFirstName
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getFirstName with result=dd
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getLastName
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getLastName with result=fffffff
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getEmailAddress
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getEmailAddress with result=asisida@post.bgu.ac.il
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getPhoneNumber
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getPhoneNumber with result=045040404
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Entering getBirthday
+2024-06-28 14:14:56 INFO  c.s.sadnamarket.domain.users.Member - Exiting getBirthday with result=2024-06-13
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMemberDTO with result=com.sadna.sadnamarket.domain.users.MemberDTO@6793cc43
+2024-06-28 14:14:56 INFO  c.s.s.domain.users.UserFacade - finished get memberDTO for asisida
+2024-06-28 14:14:56 INFO  c.s.s.service.MarketService - User idanasis got owners of store 0.

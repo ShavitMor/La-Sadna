@@ -1,0 +1,77 @@
+2024-06-28 14:09:27 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=1 does not exist
+2024-06-28 14:09:27 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 1 does not exist
+2024-06-28 14:10:07 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:10:07 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:10:56 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:10:56 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:11:10 ERROR c.s.s.service.MarketService - sendStoreOwnerRequest: User idanasis2 is already a owner of store 0.
+2024-06-28 14:13:01 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:13:01 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:13:18 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:13:18 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:13:42 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:13:42 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:14:53 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-06-28 14:14:53 ERROR c.s.s.service.MarketService - getProductsInfo: No products found
+2024-07-05 13:00:43 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-07-05 13:01:36 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-07-05 13:09:11 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-07-05 13:09:22 ERROR c.s.s.service.MarketService - createStore: jwt isnt valid
+2024-07-05 13:26:30 ERROR c.s.s.service.MarketService - createStore: jwt isnt valid
+2024-07-05 13:27:50 ERROR c.s.s.service.MarketService - createStore: jwt isnt valid
+2024-07-05 13:28:57 ERROR c.s.s.service.MarketService - createStore: jwt isnt valid
+2024-07-05 13:30:14 ERROR c.s.s.service.MarketService - createStore: 050222222 is not a valid phone number.
+2024-07-05 14:13:47 ERROR c.s.s.service.MarketService - sendStoreOwnerRequest: User u4 is already a owner of store 0.
+2024-07-05 14:14:12 ERROR c.s.sadnamarket.domain.users.Member - Exception in logout: user isn't logged in
+2024-07-05 14:14:12 ERROR c.s.s.service.MarketService - error in logout: user isn't logged in
+2024-07-05 14:14:12 ERROR c.s.sadnamarket.domain.users.Member - Exception in logout: user isn't logged in
+2024-07-05 14:14:12 ERROR c.s.s.service.MarketService - error in logout: user isn't logged in
+2024-07-05 15:00:31 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=0 does not exist
+2024-07-05 15:00:31 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 0 does not exist
+2024-07-05 15:00:31 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=0 does not exist
+2024-07-05 15:00:31 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 0 does not exist
+2024-07-05 15:00:31 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=0 does not exist
+2024-07-05 15:00:31 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 0 does not exist
+2024-07-05 15:01:20 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=1 does not exist
+2024-07-05 15:01:20 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 1 does not exist
+2024-07-05 15:01:20 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=1 does not exist
+2024-07-05 15:01:20 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 1 does not exist

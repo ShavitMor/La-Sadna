@@ -1,0 +1,6 @@
+{
+  "sysman": "u1",
+  "db": "jdbc:mysql://sadnadb.c1ueowgcy9zp.eu-west-3.rds.amazonaws.com:3306/sadna_test?useSSL=true",
+  "clear": "on",
+  "state": "configForTests/stateCheck.json"
+}

@@ -1,0 +1,46 @@
+2024-07-03 10:14:09 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-07-03 10:20:55 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=1 does not exist
+2024-07-03 10:20:55 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 1 does not exist
+2024-07-03 10:21:05 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=1 does not exist
+2024-07-03 10:21:05 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 1 does not exist
+2024-07-03 10:22:36 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=1 does not exist
+2024-07-03 10:22:36 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 1 does not exist
+2024-07-03 10:24:41 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:24:41 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:25:11 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:25:11 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:25:16 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:25:16 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:25:19 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:25:19 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:27:52 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:27:52 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:29:00 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:29:00 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:29:02 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:29:02 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:29:04 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:29:04 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:38:54 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:38:54 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:39:23 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:39:23 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:39:48 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=2 does not exist
+2024-07-03 10:39:48 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 2 does not exist
+2024-07-03 10:40:01 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=1 does not exist
+2024-07-03 10:40:01 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 1 does not exist
+2024-07-03 10:40:02 ERROR c.s.s.domain.users.MemoryRepo - Exception in hasGuest: Guest with guestID=1 does not exist
+2024-07-03 10:40:02 ERROR c.s.s.service.MarketService - error in exitGuest: Guest with guestID 1 does not exist
+2024-07-03 10:40:14 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=1 does not exist
+2024-07-03 10:40:14 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 1 does not exist
+2024-07-03 10:40:34 ERROR c.s.s.domain.users.MemoryRepo - Exception in getGuest: Guest with guestID=1 does not exist
+2024-07-03 10:40:34 ERROR c.s.s.service.MarketService - error in login: Guest with guestID 1 does not exist
+2024-07-03 18:55:08 ERROR c.s.s.service.MarketService - checkToken: jwt isnt valid
+2024-07-03 18:55:51 ERROR c.s.s.domain.auth.AuthFacade - user doesnt exist
+2024-07-03 18:55:51 ERROR c.s.s.service.MarketService - error in login: user doesnt exist
+2024-07-03 18:56:59 ERROR c.s.s.domain.auth.AuthFacade - user doesnt exist
+2024-07-03 18:56:59 ERROR c.s.s.service.MarketService - error in login: user doesnt exist
+2024-07-03 18:57:35 ERROR c.s.s.domain.auth.AuthFacade - user doesnt exist
+2024-07-03 18:57:35 ERROR c.s.s.service.MarketService - error in login: user doesnt exist
+2024-07-03 18:57:38 ERROR c.s.s.domain.auth.AuthFacade - user doesnt exist
+2024-07-03 18:57:38 ERROR c.s.s.service.MarketService - error in login: user doesnt exist

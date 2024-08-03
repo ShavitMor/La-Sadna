@@ -1,0 +1,128 @@
+{
+
+  "commands": [
+    {
+      "method": "register",
+      "params": ["u1", "u1Password", "user","one","u1@gmail.com","0501111111","12-09-1998"]
+    },
+    {
+      "method": "setSystemAdminstor",
+      "params": ["u1"]
+    },
+    {
+      "method": "register",
+      "params": ["u2", "u2Password", "user","Two","u2@gmail.com","0502222222","12-09-1999"]
+    },
+    {
+      "method": "register",
+      "params": ["u3", "u3Password", "user","Three","u3@gmail.com","050333333","12-09-2000"]
+    },
+    {
+      "method": "register",
+      "params": ["u4", "u4Password", "user","Four","u4@gmail.com","0504444444","12-09-2001"]
+    },
+    {
+      "method": "register",
+      "params": ["u5", "u5Password", "user","Five","u5@gmail.com","050555555555","12-09-2002"]
+    },
+    {
+      "method": "register",
+      "params": ["u6", "u6Password", "user","Six","u6@gmail.com","050666666","12-09-2003"]
+    },
+    {
+      "method": "login",
+      "params": ["u2", "u2Password"]
+    },
+    {
+      "method": "createStore",
+      "params": ["token-u2","u2","s1", "bgu 1 beer sheva","u2@gmail.com","0502222222"]
+    },
+    {
+      "method": "addProductToStore",
+      "params": ["token-u2", "u2", "storeId-1", "Bamba", 20, 3.5, "Food", 3.0,  0.5, "Bamba the loveable snake"]
+    },
+    {
+      "method": "sendStoreManagerRequest",
+      "params": ["token-u2", "u2","u3","storeId-1"]
+    },
+    {
+      "method": "login",
+      "params": ["u3", "u3Password"]
+    },
+    {
+      "method": "getUserNotifications",
+      "params": ["u3"]
+    },
+    {
+      "method": "acceptRequest",
+      "params": ["u3", "request-1"]
+    },
+    {
+      "method": "logout",
+      "params": ["u3"]
+    },
+    {
+      "method": "changeManagerPermission",
+      "params": ["token-u2", "u2","u3","storeId-1","permission-1,2"]
+    },
+    {
+      "method": "sendStoreOwnerRequest",
+      "params": ["token-u2", "u2","u4","storeId-1"]
+    },
+    {
+      "method": "login",
+      "params": ["u4", "u4Password"]
+    },
+    {
+      "method": "getUserNotifications",
+      "params": ["u4"]
+    },
+    {
+      "method": "acceptRequest",
+      "params": ["u4", "request-1"]
+    },
+    {
+      "method": "sendStoreOwnerRequest",
+      "params": ["token-u2", "u2","u5","storeId-1"]
+    },
+    {
+      "method": "login",
+      "params": ["u5", "u5Password"]
+    },
+    {
+      "method": "getUserNotifications",
+      "params": ["u5"]
+    },
+    {
+      "method": "acceptRequest",
+      "params": ["u5", "request-1"]
+    },
+    {
+      "method": "logout",
+      "params": ["u4"]
+    },
+    {
+      "method": "logout",
+      "params": ["u5"]
+    },
+    {
+      "method": "logout",
+      "params": ["u2"]
+    }
+  ,
+    {
+      "method": "exitGuest",
+      "params": ["guestId-1"]
+    }
+  ,
+    {
+      "method": "exitGuest",
+      "params": ["guestId-1"]
+    }
+  ,
+    {
+      "method": "exitGuest",
+      "params": ["guestId-1"]
+    }
+  ]
+}

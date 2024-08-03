@@ -1,0 +1,70 @@
+.wizard{
+    display: flex;
+    flex-direction: row;
+    border-bottom-color: #ABABAB;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 100%;
+}
+
+.selector{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border-right-color: #ABABAB;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.selectorbutton{
+    width: 95%;
+    align-self: center;
+    background-color: white;
+    font-size: 14px;
+    font-family: Roboto;
+    border-width: 1px;
+    border-color: #ABABAB;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.selectorbutton:hover{
+    background-color: #ABABAB;
+    font-family: Roboto;
+    color: white;
+}
+
+.discountEditor{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Roboto;
+    width: 100%;
+}
+
+.editorButton{
+    background-color: white;
+    border-color: #000099;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #000099;
+    width: 20%;
+    margin: 5px;
+}
+
+.editorButton:hover{
+    background-color: #000099;
+    font-family: Roboto;
+    color: white;
+}
+
+.policyDescription{
+    font-family: Roboto;
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}

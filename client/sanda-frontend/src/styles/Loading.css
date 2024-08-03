@@ -1,0 +1,10 @@
+.loadingdiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    margin: 10px;
+}

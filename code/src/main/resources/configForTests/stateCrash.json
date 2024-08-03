@@ -1,0 +1,14 @@
+{
+    
+    "commands": [
+      {
+        "method": "register",
+        "params": ["u1", "u1Password", "user","one","u1@gmail.com","0501111111","12-09-1998"]
+      },
+      {
+        "method": "register",
+        "params": ["u1", "u1Password", "user","one","u1@gmail.com","0501111111","12-09-1998"]
+      }
+      ]
+  }
+  

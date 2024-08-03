@@ -1,0 +1,44 @@
+/* Navbar.css */
+.navbar-container {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #232F3E; /* Amazon's dark blue color */
+    
+}
+
+/* styles/navbar.css */
+.toggle-search-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toggle-search-button:hover {
+    background-color: #ddd;
+}
+
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-item {
+    margin: 0 10px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}

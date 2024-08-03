@@ -1,0 +1,99 @@
+/* Container styling */
+.profile-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.profile-page h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form styling */
+.profile-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form group styling */
+.profile-page .form-group {
+  margin-bottom: 1rem;
+}
+
+/* Label styling */
+.profile-page label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Input styling */
+.profile-page input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Input focus styling */
+.profile-page input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Invalid input styling */
+.profile-page input.invalid {
+  border-color: #ff0000;
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Button styling */
+.profile-page button {
+  padding: 0.75rem 1.5rem;
+
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Hover and focus state styling for button */
+.submit-profile-page-button {
+  background-color: #007bff;
+}
+
+/* Reset button specific styling */
+.reset-profile-page-button {
+  background-color: #ff0000;
+}
+
+
+
+/* Error message styling */
+.error-message {
+  color: #ff0000;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}

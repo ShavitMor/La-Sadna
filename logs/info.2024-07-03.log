@@ -1,0 +1,666 @@
+2024-07-03 10:14:01 INFO  c.s.s.SadnaMarketApplication - Starting SadnaMarketApplication using Java 17 with PID 2840 (C:\Users\shavi\Desktop\sadna\code\target\classes started by shavi in C:\Users\shavi\Desktop\sadna)
+2024-07-03 10:14:01 INFO  c.s.s.SadnaMarketApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-03 10:14:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-03 10:14:04 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-03 10:14:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-03 10:14:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-07-03 10:14:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-03 10:14:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3261 ms
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.MemoryRepo - Entering MemoryRepo constructor
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting MemoryRepo constructor
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.UserFacade - initilize user fascade
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.UserFacade - finish initilize user fascade
+2024-07-03 10:14:05 INFO  c.s.s.domain.auth.AuthFacade - start-register. username: SM first name=sami, last name=hatuka, email=shawarma@gmail.com phone number=0511111111, birthday=null
+2024-07-03 10:14:05 INFO  c.s.s.domain.auth.PasswordHash - start-hashPassword
+2024-07-03 10:14:05 INFO  c.s.s.domain.auth.PasswordHash - end-hashPassword. returnedValue:$2a$10$6Iy271GGeINb/7FXAKrRk.LZTp.gHG6SUjsMeCbPXQtJuqaAf8zv.
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.UserFacade - SM try to register 
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.MemoryRepo - Entering store with username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-07-03 10:14:05 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:14:05 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:14:05 INFO  c.s.sadnamarket.domain.users.Member - Entering Member constructor with parameters: username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-07-03 10:14:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting Member constructor
+2024-07-03 10:14:05 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-07-03 10:14:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=SM
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting store
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.UserFacade - SM done register 
+2024-07-03 10:14:05 INFO  c.s.s.domain.auth.AuthFacade - end-register.
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.UserFacade - set system username SM
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.UserFacade - check if member exist SM
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=SM
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-07-03 10:14:05 INFO  c.s.s.domain.users.UserFacade - done set system username SM
+2024-07-03 10:14:06 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-03 10:14:06 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@660296d5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d3163a6, org.springframework.security.web.context.SecurityContextHolderFilter@62058742, org.springframework.security.web.header.HeaderWriterFilter@3d0352, org.springframework.web.filter.CorsFilter@75d97e18, org.springframework.security.web.authentication.logout.LogoutFilter@5ed25612, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36df4c26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fee69a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fdb7394, org.springframework.security.web.access.ExceptionTranslationFilter@489f62a3]
+2024-07-03 10:14:06 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-03 10:14:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-07-03 10:14:06 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2024-07-03 10:14:06 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@73b8ab2c]]
+2024-07-03 10:14:06 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2024-07-03 10:14:06 INFO  c.s.s.SadnaMarketApplication - Started SadnaMarketApplication in 6.772 seconds (process running for 7.809)
+2024-07-03 10:14:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-03 10:14:09 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-03 10:14:09 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-03 10:14:09 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:14:09 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:14:09 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcxOTUxMTMxMywiZXhwIjoxNzE5NTk3NzEzfQ.9FZEBD0w-Uimajn4dpOVD5jwzDd8nz3ZOaMrPb2YPu0
+2024-07-03 10:14:16 INFO  c.s.s.service.MarketService - guest tries to enter
+2024-07-03 10:14:16 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-07-03 10:14:16 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-07-03 10:14:16 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:14:16 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:14:16 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 1
+2024-07-03 10:14:16 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:14:16 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:14:16 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 1
+2024-07-03 10:14:16 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=1
+2024-07-03 10:14:16 INFO  c.s.s.service.MarketService - guest entered with id 1
+2024-07-03 10:14:18 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:14:18 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:15:06 INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-07-03 10:19:40 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:19:40 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:20:13 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:20:13 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:20:29 INFO  c.s.s.service.MarketService - guest 1 tries to exit
+2024-07-03 10:20:29 INFO  c.s.s.domain.users.UserFacade - remove guest 1
+2024-07-03 10:20:29 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=1
+2024-07-03 10:20:29 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=1
+2024-07-03 10:20:29 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasGuest with result=true
+2024-07-03 10:20:29 INFO  c.s.s.domain.users.MemoryRepo - Exiting deleteGuest
+2024-07-03 10:20:29 INFO  c.s.s.domain.users.UserFacade - removed guest 1
+2024-07-03 10:20:29 INFO  c.s.s.service.MarketService - guest 1 exited
+2024-07-03 10:20:30 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:20:30 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:20:55 INFO  c.s.s.service.MarketService - guest 1 tries to exit
+2024-07-03 10:20:55 INFO  c.s.s.domain.users.UserFacade - remove guest 1
+2024-07-03 10:20:55 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=1
+2024-07-03 10:20:55 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=1
+2024-07-03 10:20:56 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:20:56 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:21:05 INFO  c.s.s.service.MarketService - guest 1 tries to exit
+2024-07-03 10:21:05 INFO  c.s.s.domain.users.UserFacade - remove guest 1
+2024-07-03 10:21:05 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=1
+2024-07-03 10:21:05 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=1
+2024-07-03 10:21:19 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:21:19 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:22:36 INFO  c.s.s.service.MarketService - guest 1 tries to exit
+2024-07-03 10:22:36 INFO  c.s.s.domain.users.UserFacade - remove guest 1
+2024-07-03 10:22:36 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=1
+2024-07-03 10:22:36 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=1
+2024-07-03 10:22:37 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:22:37 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:22:37 INFO  c.s.s.service.MarketService - guest tries to enter
+2024-07-03 10:22:37 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-07-03 10:22:37 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-07-03 10:22:37 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:22:37 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:22:37 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 2
+2024-07-03 10:22:37 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:22:37 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:22:37 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 2
+2024-07-03 10:22:37 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=2
+2024-07-03 10:22:37 INFO  c.s.s.service.MarketService - guest entered with id 2
+2024-07-03 10:24:01 INFO  c.s.s.SadnaMarketApplication - Starting SadnaMarketApplication using Java 17 with PID 2668 (C:\Users\shavi\Desktop\sadna\code\target\classes started by shavi in C:\Users\shavi\Desktop\sadna)
+2024-07-03 10:24:01 INFO  c.s.s.SadnaMarketApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-03 10:24:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-03 10:24:03 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-03 10:24:03 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-03 10:24:03 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-07-03 10:24:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-03 10:24:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1940 ms
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.MemoryRepo - Entering MemoryRepo constructor
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting MemoryRepo constructor
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.UserFacade - initilize user fascade
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.UserFacade - finish initilize user fascade
+2024-07-03 10:24:04 INFO  c.s.s.domain.auth.AuthFacade - start-register. username: SM first name=sami, last name=hatuka, email=shawarma@gmail.com phone number=0511111111, birthday=null
+2024-07-03 10:24:04 INFO  c.s.s.domain.auth.PasswordHash - start-hashPassword
+2024-07-03 10:24:04 INFO  c.s.s.domain.auth.PasswordHash - end-hashPassword. returnedValue:$2a$10$QEmVoFPn5ilEX18VrgZl5.z3hdmzz9xa0W9LBUP2mrSDyIDCFhIO.
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.UserFacade - SM try to register 
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.MemoryRepo - Entering store with username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-07-03 10:24:04 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:24:04 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:24:04 INFO  c.s.sadnamarket.domain.users.Member - Entering Member constructor with parameters: username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-07-03 10:24:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting Member constructor
+2024-07-03 10:24:04 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-07-03 10:24:04 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=SM
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting store
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.UserFacade - SM done register 
+2024-07-03 10:24:04 INFO  c.s.s.domain.auth.AuthFacade - end-register.
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.UserFacade - set system username SM
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.UserFacade - check if member exist SM
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=SM
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-07-03 10:24:04 INFO  c.s.s.domain.users.UserFacade - done set system username SM
+2024-07-03 10:24:05 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-03 10:24:05 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@525b8922, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@145a821d, org.springframework.security.web.context.SecurityContextHolderFilter@2fac80a8, org.springframework.security.web.header.HeaderWriterFilter@6164e137, org.springframework.web.filter.CorsFilter@6caa4dc5, org.springframework.security.web.authentication.logout.LogoutFilter@11e834ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50778bde, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72eed547, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ed51944, org.springframework.security.web.access.ExceptionTranslationFilter@5b7308aa]
+2024-07-03 10:24:05 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-03 10:24:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-07-03 10:24:05 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2024-07-03 10:24:05 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5a1c7619]]
+2024-07-03 10:24:05 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2024-07-03 10:24:05 INFO  c.s.s.SadnaMarketApplication - Started SadnaMarketApplication in 4.46 seconds (process running for 5.125)
+2024-07-03 10:24:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-03 10:24:07 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-03 10:24:07 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-03 10:24:17 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:24:17 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:24:28 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:24:28 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:24:41 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:24:41 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-07-03 10:24:41 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:24:41 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:24:41 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:24:41 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:25:05 INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-07-03 10:25:11 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:25:11 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-07-03 10:25:11 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:25:11 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:25:11 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:25:11 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:25:16 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:25:16 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-07-03 10:25:16 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:25:16 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:25:17 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:25:17 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:25:19 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:25:19 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-07-03 10:25:19 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:25:19 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:25:19 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:25:19 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:27:52 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:27:52 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-07-03 10:27:52 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:27:52 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:27:53 INFO  c.s.s.service.MarketService - guest tries to enter
+2024-07-03 10:27:53 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:27:53 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-07-03 10:27:53 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:27:53 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-07-03 10:27:53 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:27:53 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:27:53 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 1
+2024-07-03 10:27:53 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:27:53 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:27:53 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 1
+2024-07-03 10:27:53 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=1
+2024-07-03 10:27:53 INFO  c.s.s.service.MarketService - guest entered with id 1
+2024-07-03 10:28:54 INFO  c.s.s.service.MarketService - guest 1 tries to exit
+2024-07-03 10:28:54 INFO  c.s.s.domain.users.UserFacade - remove guest 1
+2024-07-03 10:28:54 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=1
+2024-07-03 10:28:54 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=1
+2024-07-03 10:28:54 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasGuest with result=true
+2024-07-03 10:28:54 INFO  c.s.s.domain.users.MemoryRepo - Exiting deleteGuest
+2024-07-03 10:28:54 INFO  c.s.s.domain.users.UserFacade - removed guest 1
+2024-07-03 10:28:54 INFO  c.s.s.service.MarketService - guest 1 exited
+2024-07-03 10:28:56 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:28:56 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:28:56 INFO  c.s.s.service.MarketService - guest tries to enter
+2024-07-03 10:28:56 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-07-03 10:28:56 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-07-03 10:28:56 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:28:56 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:28:56 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 2
+2024-07-03 10:28:56 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:28:56 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:28:56 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 2
+2024-07-03 10:28:56 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=2
+2024-07-03 10:28:56 INFO  c.s.s.service.MarketService - guest entered with id 2
+2024-07-03 10:28:58 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:28:58 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-07-03 10:28:58 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:28:58 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:28:58 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasGuest with result=true
+2024-07-03 10:28:58 INFO  c.s.s.domain.users.MemoryRepo - Exiting deleteGuest
+2024-07-03 10:28:58 INFO  c.s.s.domain.users.UserFacade - removed guest 2
+2024-07-03 10:28:58 INFO  c.s.s.service.MarketService - guest 2 exited
+2024-07-03 10:28:59 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:28:59 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:29:00 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:29:00 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-07-03 10:29:00 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:29:00 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:29:01 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:29:01 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:29:02 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:29:02 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-07-03 10:29:02 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:29:02 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:29:03 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:29:03 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:29:04 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:29:04 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-07-03 10:29:04 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:29:04 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:29:04 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:29:04 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:38:54 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:38:54 INFO  c.s.s.domain.users.UserFacade - remove guest 2
+2024-07-03 10:38:54 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:38:54 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:38:55 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:38:55 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:38:58 INFO  c.s.s.SadnaMarketApplication - Starting SadnaMarketApplication using Java 17 with PID 12180 (C:\Users\shavi\Desktop\sadna\code\target\classes started by shavi in C:\Users\shavi\Desktop\sadna)
+2024-07-03 10:38:58 INFO  c.s.s.SadnaMarketApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-03 10:39:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-03 10:39:00 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-03 10:39:00 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-03 10:39:00 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-07-03 10:39:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-03 10:39:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1647 ms
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.MemoryRepo - Entering MemoryRepo constructor
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.MemoryRepo - Exiting MemoryRepo constructor
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.UserFacade - initilize user fascade
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.UserFacade - finish initilize user fascade
+2024-07-03 10:39:00 INFO  c.s.s.domain.auth.AuthFacade - start-register. username: SM first name=sami, last name=hatuka, email=shawarma@gmail.com phone number=0511111111, birthday=null
+2024-07-03 10:39:00 INFO  c.s.s.domain.auth.PasswordHash - start-hashPassword
+2024-07-03 10:39:00 INFO  c.s.s.domain.auth.PasswordHash - end-hashPassword. returnedValue:$2a$10$9tkUZDv2VXwQGWsyDfD7LecMx8oGZnfyzYElzr3tnRoUVS56s//Oe
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.UserFacade - SM try to register 
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.MemoryRepo - Entering store with username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-07-03 10:39:00 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:39:00 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:39:00 INFO  c.s.sadnamarket.domain.users.Member - Entering Member constructor with parameters: username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-07-03 10:39:00 INFO  c.s.sadnamarket.domain.users.Member - Exiting Member constructor
+2024-07-03 10:39:00 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-07-03 10:39:00 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=SM
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.MemoryRepo - Exiting store
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.UserFacade - SM done register 
+2024-07-03 10:39:00 INFO  c.s.s.domain.auth.AuthFacade - end-register.
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.UserFacade - set system username SM
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.UserFacade - check if member exist SM
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=SM
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-07-03 10:39:00 INFO  c.s.s.domain.users.UserFacade - done set system username SM
+2024-07-03 10:39:01 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-03 10:39:01 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44a93f8a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26463a6, org.springframework.security.web.context.SecurityContextHolderFilter@36dafa24, org.springframework.security.web.header.HeaderWriterFilter@22b7ef2b, org.springframework.web.filter.CorsFilter@6c5ae8fd, org.springframework.security.web.authentication.logout.LogoutFilter@6c6c2a73, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c758a2d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ba024cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17354708, org.springframework.security.web.access.ExceptionTranslationFilter@2353354a]
+2024-07-03 10:39:02 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-03 10:39:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-07-03 10:39:02 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2024-07-03 10:39:02 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@34695b23]]
+2024-07-03 10:39:02 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2024-07-03 10:39:02 INFO  c.s.s.SadnaMarketApplication - Started SadnaMarketApplication in 3.907 seconds (process running for 4.64)
+2024-07-03 10:39:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-03 10:39:04 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-03 10:39:04 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-03 10:39:11 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:39:11 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:39:23 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:39:23 INFO  c.s.s.domain.users.UserFacade - enter remove guest 2
+2024-07-03 10:39:23 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:39:23 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:39:24 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:39:24 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:39:48 INFO  c.s.s.service.MarketService - guest 2 tries to exit
+2024-07-03 10:39:48 INFO  c.s.s.domain.users.UserFacade - enter remove guest 2
+2024-07-03 10:39:48 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:39:48 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:39:50 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:39:50 INFO  c.s.s.service.MarketService - guest tries to enter
+2024-07-03 10:39:50 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:39:50 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-07-03 10:39:50 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-07-03 10:39:50 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:39:50 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:39:50 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 1
+2024-07-03 10:39:50 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:39:50 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:39:50 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 1
+2024-07-03 10:39:50 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=1
+2024-07-03 10:39:50 INFO  c.s.s.service.MarketService - guest entered with id 1
+2024-07-03 10:39:58 INFO  c.s.s.service.MarketService - guest 1 tries to exit
+2024-07-03 10:39:58 INFO  c.s.s.domain.users.UserFacade - enter remove guest 1
+2024-07-03 10:39:58 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=1
+2024-07-03 10:39:58 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=1
+2024-07-03 10:39:58 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasGuest with result=true
+2024-07-03 10:39:58 INFO  c.s.s.domain.users.MemoryRepo - Exiting deleteGuest
+2024-07-03 10:39:58 INFO  c.s.s.domain.users.UserFacade - removed guest 1
+2024-07-03 10:39:58 INFO  c.s.s.service.MarketService - guest 1 exited
+2024-07-03 10:39:59 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:39:59 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:40:01 INFO  c.s.s.service.MarketService - guest 1 tries to exit
+2024-07-03 10:40:01 INFO  c.s.s.domain.users.UserFacade - enter remove guest 1
+2024-07-03 10:40:01 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=1
+2024-07-03 10:40:01 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=1
+2024-07-03 10:40:01 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:40:01 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:40:02 INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-07-03 10:40:02 INFO  c.s.s.service.MarketService - guest 1 tries to exit
+2024-07-03 10:40:02 INFO  c.s.s.domain.users.UserFacade - enter remove guest 1
+2024-07-03 10:40:02 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=1
+2024-07-03 10:40:02 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=1
+2024-07-03 10:40:02 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:40:02 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:40:14 INFO  c.s.s.service.MarketService - user SM tries to login from guestId=1
+2024-07-03 10:40:14 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: SM from guest 1 
+2024-07-03 10:40:14 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: SM 
+2024-07-03 10:40:14 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: SM 
+2024-07-03 10:40:14 INFO  c.s.s.domain.auth.AuthFacade - start-isPasswordCorrect. username: SM 
+2024-07-03 10:40:14 INFO  c.s.s.domain.auth.PasswordHash - start-verifyPassword $2a$10$9tkUZDv2VXwQGWsyDfD7LecMx8oGZnfyzYElzr3tnRoUVS56s//Oe
+2024-07-03 10:40:14 INFO  c.s.s.domain.auth.AuthFacade - end-isPasswordCorrect. returnedValue:true
+2024-07-03 10:40:14 INFO  c.s.s.domain.auth.AuthFacade - end-Login.
+2024-07-03 10:40:14 INFO  c.s.s.domain.auth.AuthFacade - start-generateToken. args: SM
+2024-07-03 10:40:14 INFO  c.s.s.domain.auth.AuthFacade - end-auth. token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcxOTk5MjQxNCwiZXhwIjoxNzIwMDc4ODE0fQ.7CZpVilCNpltZ94Q4MtbDutTxyst4Q6uj8hXw8FWwjE
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.UserFacade - SM login from guest 1
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.UserFacade - field SM is valid
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=SM
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@69891d99
+2024-07-03 10:40:14 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-07-03 10:40:14 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=false
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=false
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.MemoryRepo - getting member cart for SM
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@69891d99
+2024-07-03 10:40:14 INFO  c.s.sadnamarket.domain.users.IUser - Entering get Cart Items
+2024-07-03 10:40:14 INFO  c.s.sadnamarket.domain.users.Cart - getting cart items
+2024-07-03 10:40:14 INFO  c.s.sadnamarket.domain.users.Cart - got cart items []
+2024-07-03 10:40:14 INFO  c.s.sadnamarket.domain.users.IUser - exiting get Cart Items: []
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.MemoryRepo - got member cart for SM: []
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.MemoryRepo - getting guest cart for 1
+2024-07-03 10:40:14 INFO  c.s.s.domain.users.MemoryRepo - Entering getGuest with guestID=1
+2024-07-03 10:40:34 INFO  c.s.s.service.MarketService - user SM tries to login from guestId=1
+2024-07-03 10:40:34 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: SM from guest 1 
+2024-07-03 10:40:34 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: SM 
+2024-07-03 10:40:34 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: SM 
+2024-07-03 10:40:34 INFO  c.s.s.domain.auth.AuthFacade - start-isPasswordCorrect. username: SM 
+2024-07-03 10:40:34 INFO  c.s.s.domain.auth.PasswordHash - start-verifyPassword $2a$10$9tkUZDv2VXwQGWsyDfD7LecMx8oGZnfyzYElzr3tnRoUVS56s//Oe
+2024-07-03 10:40:34 INFO  c.s.s.domain.auth.AuthFacade - end-isPasswordCorrect. returnedValue:true
+2024-07-03 10:40:34 INFO  c.s.s.domain.auth.AuthFacade - end-Login.
+2024-07-03 10:40:34 INFO  c.s.s.domain.auth.AuthFacade - start-generateToken. args: SM
+2024-07-03 10:40:34 INFO  c.s.s.domain.auth.AuthFacade - end-auth. token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcxOTk5MjQzNCwiZXhwIjoxNzIwMDc4ODM0fQ.WxBlJI66d_ueyrDu3Ovdz6UAVypwQHFzDeKf0MuOO6E
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.UserFacade - SM login from guest 1
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.UserFacade - field SM is valid
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=SM
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@69891d99
+2024-07-03 10:40:34 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-07-03 10:40:34 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=false
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=false
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.MemoryRepo - getting member cart for SM
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@69891d99
+2024-07-03 10:40:34 INFO  c.s.sadnamarket.domain.users.IUser - Entering get Cart Items
+2024-07-03 10:40:34 INFO  c.s.sadnamarket.domain.users.Cart - getting cart items
+2024-07-03 10:40:34 INFO  c.s.sadnamarket.domain.users.Cart - got cart items []
+2024-07-03 10:40:34 INFO  c.s.sadnamarket.domain.users.IUser - exiting get Cart Items: []
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.MemoryRepo - got member cart for SM: []
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.MemoryRepo - getting guest cart for 1
+2024-07-03 10:40:34 INFO  c.s.s.domain.users.MemoryRepo - Entering getGuest with guestID=1
+2024-07-03 10:40:39 INFO  c.s.s.service.MarketService - guest tries to enter
+2024-07-03 10:40:39 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-07-03 10:40:39 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-07-03 10:40:39 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:40:39 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:40:39 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 2
+2024-07-03 10:40:39 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 10:40:39 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:40:39 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 2
+2024-07-03 10:40:39 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=2
+2024-07-03 10:40:39 INFO  c.s.s.service.MarketService - guest entered with id 2
+2024-07-03 10:40:44 INFO  c.s.s.service.MarketService - user SM tries to login from guestId=2
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: SM from guest 2 
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: SM 
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: SM 
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - start-isPasswordCorrect. username: SM 
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.PasswordHash - start-verifyPassword $2a$10$9tkUZDv2VXwQGWsyDfD7LecMx8oGZnfyzYElzr3tnRoUVS56s//Oe
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - end-isPasswordCorrect. returnedValue:true
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - end-Login.
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - start-generateToken. args: SM
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - end-auth. token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcxOTk5MjQ0NCwiZXhwIjoxNzIwMDc4ODQ0fQ.obPJjwBKuQNB9X2kcmLbYVZB-K4cOEB7wswAWTmf8Ro
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.UserFacade - SM login from guest 2
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.UserFacade - field SM is valid
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=SM
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@69891d99
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=false
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=false
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - getting member cart for SM
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@69891d99
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.IUser - Entering get Cart Items
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Cart - getting cart items
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Cart - got cart items []
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.IUser - exiting get Cart Items: []
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - got member cart for SM: []
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - getting guest cart for 2
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering getGuest with guestID=2
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting getGuest with result=com.sadna.sadnamarket.domain.users.Guest@63871835
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.IUser - Entering get Cart Items
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Cart - getting cart items
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Cart - got cart items []
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.IUser - exiting get Cart Items: []
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - got guest cart for 2: []
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering setCart with userName=SM, cart=[]
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@69891d99
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor with cartItems=[]
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Member - Entering setCart with cart=com.sadna.sadnamarket.domain.users.Cart@1b944a98
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Cart - Entering isEmpty
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Cart - Exiting isEmpty with result=true
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Member - Exiting setCart
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting setCart
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering setLogin with userName=SM, isLoggedIn=true
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@69891d99
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Member - Entering setLogin with isLoggedIn=true
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Member - Exiting setLogin
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting setLogin
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.UserFacade - enter remove guest 2
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=2
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=2
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasGuest with result=true
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting deleteGuest
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.UserFacade - removed guest 2
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.UserFacade - SM done login from guest 2
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - end-Login. returnedValue:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcxOTk5MjQ0NCwiZXhwIjoxNzIwMDc4ODQ0fQ.obPJjwBKuQNB9X2kcmLbYVZB-K4cOEB7wswAWTmf8Ro
+2024-07-03 10:40:44 INFO  c.s.s.service.MarketService - user SM logged in
+2024-07-03 10:40:44 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 10:40:44 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcxOTk5MjQ0NCwiZXhwIjoxNzIwMDc4ODQ0fQ.obPJjwBKuQNB9X2kcmLbYVZB-K4cOEB7wswAWTmf8Ro
+2024-07-03 10:40:44 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcxOTk5MjQ0NCwiZXhwIjoxNzIwMDc4ODQ0fQ.obPJjwBKuQNB9X2kcmLbYVZB-K4cOEB7wswAWTmf8Ro
+2024-07-03 10:40:44 INFO  c.s.s.service.MarketService - get user notifications for SM
+2024-07-03 10:40:44 INFO  c.s.s.service.MarketService - check if SM is system manager
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.UserFacade - getting notifications for SM
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.UserFacade - check if username is system manager SM
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering getNotifications with username=SM
+2024-07-03 10:40:44 INFO  c.s.s.service.MarketService - finished check if SM is system manager
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@69891d99
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Member - Entering getNotifications
+2024-07-03 10:40:44 INFO  c.s.sadnamarket.domain.users.Member - Exiting getNotifications with result={}
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.MemoryRepo - Exiting getNotifications with result=[]
+2024-07-03 10:40:44 INFO  c.s.s.domain.users.UserFacade - got notifications for SM
+2024-07-03 10:40:44 INFO  c.s.s.service.MarketService - finished get user notifications []
+2024-07-03 18:55:02 INFO  c.s.s.SadnaMarketApplication - Starting SadnaMarketApplication using Java 17 with PID 9884 (C:\Users\shavi\Desktop\sadna\code\target\classes started by shavi in C:\Users\shavi\Desktop\sadna)
+2024-07-03 18:55:02 INFO  c.s.s.SadnaMarketApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-03 18:55:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-03 18:55:05 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-03 18:55:05 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-03 18:55:05 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-07-03 18:55:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-03 18:55:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2421 ms
+2024-07-03 18:55:05 INFO  c.s.s.domain.users.MemoryRepo - Entering MemoryRepo constructor
+2024-07-03 18:55:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting MemoryRepo constructor
+2024-07-03 18:55:05 INFO  c.s.s.domain.users.UserFacade - initilize user fascade
+2024-07-03 18:55:05 INFO  c.s.s.domain.users.UserFacade - finish initilize user fascade
+2024-07-03 18:55:05 INFO  c.s.s.domain.auth.AuthFacade - start-register. username: SM first name=sami, last name=hatuka, email=shawarma@gmail.com phone number=0511111111, birthday=null
+2024-07-03 18:55:05 INFO  c.s.s.domain.auth.PasswordHash - start-hashPassword
+2024-07-03 18:55:06 INFO  c.s.s.domain.auth.PasswordHash - end-hashPassword. returnedValue:$2a$10$nYJ8X6gZe36WBg5B2l96Z.1muR.41Ev/nAvFGVH5eIqP5iUkZJR3a
+2024-07-03 18:55:06 INFO  c.s.s.domain.users.UserFacade - SM try to register 
+2024-07-03 18:55:06 INFO  c.s.s.domain.users.MemoryRepo - Entering store with username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-07-03 18:55:06 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 18:55:06 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 18:55:06 INFO  c.s.sadnamarket.domain.users.Member - Entering Member constructor with parameters: username=SM, firstName=sami, lastName=hatuka, emailAddress=shawarma@gmail.com, phoneNumber=0511111111, birthDate=null
+2024-07-03 18:55:06 INFO  c.s.sadnamarket.domain.users.Member - Exiting Member constructor
+2024-07-03 18:55:06 INFO  c.s.sadnamarket.domain.users.Member - Entering getUsername
+2024-07-03 18:55:06 INFO  c.s.sadnamarket.domain.users.Member - Exiting getUsername with result=SM
+2024-07-03 18:55:06 INFO  c.s.s.domain.users.MemoryRepo - Exiting store
+2024-07-03 18:55:06 INFO  c.s.s.domain.users.UserFacade - SM done register 
+2024-07-03 18:55:06 INFO  c.s.s.domain.auth.AuthFacade - end-register.
+2024-07-03 18:55:06 INFO  c.s.s.domain.users.UserFacade - set system username SM
+2024-07-03 18:55:06 INFO  c.s.s.domain.users.UserFacade - check if member exist SM
+2024-07-03 18:55:06 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=SM
+2024-07-03 18:55:06 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-07-03 18:55:06 INFO  c.s.s.domain.users.UserFacade - done set system username SM
+2024-07-03 18:55:06 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-03 18:55:06 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b3a6e95, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ebfb045, org.springframework.security.web.context.SecurityContextHolderFilter@505d2bac, org.springframework.security.web.header.HeaderWriterFilter@1ac0cdb0, org.springframework.web.filter.CorsFilter@77a2688d, org.springframework.security.web.authentication.logout.LogoutFilter@40faff12, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d969452, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67b560fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77c692b4, org.springframework.security.web.access.ExceptionTranslationFilter@1c7f6e96]
+2024-07-03 18:55:07 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-03 18:55:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-07-03 18:55:07 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2024-07-03 18:55:07 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1169fdfd]]
+2024-07-03 18:55:07 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2024-07-03 18:55:07 INFO  c.s.s.SadnaMarketApplication - Started SadnaMarketApplication in 4.951 seconds (process running for 5.886)
+2024-07-03 18:55:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-03 18:55:08 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-03 18:55:08 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-03 18:55:08 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 18:55:08 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 18:55:08 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcxOTk5MjQ0NCwiZXhwIjoxNzIwMDc4ODQ0fQ.obPJjwBKuQNB9X2kcmLbYVZB-K4cOEB7wswAWTmf8Ro
+2024-07-03 18:55:10 INFO  c.s.s.service.MarketService - guest tries to enter
+2024-07-03 18:55:10 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-07-03 18:55:10 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-07-03 18:55:10 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 18:55:10 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 18:55:10 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 1
+2024-07-03 18:55:10 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 18:55:10 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 18:55:10 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 1
+2024-07-03 18:55:10 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=1
+2024-07-03 18:55:10 INFO  c.s.s.service.MarketService - guest entered with id 1
+2024-07-03 18:55:20 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 18:55:20 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 18:55:29 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 18:55:29 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 18:55:33 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 18:55:33 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 18:55:36 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 18:55:36 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 18:55:51 INFO  c.s.s.service.MarketService - user saas tries to login from guestId=1
+2024-07-03 18:55:51 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: saas from guest 1 
+2024-07-03 18:55:51 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: saas 
+2024-07-03 18:55:51 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: saas 
+2024-07-03 18:56:07 INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-07-03 18:56:59 INFO  c.s.s.service.MarketService - user saas tries to login from guestId=1
+2024-07-03 18:56:59 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: saas from guest 1 
+2024-07-03 18:56:59 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: saas 
+2024-07-03 18:56:59 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: saas 
+2024-07-03 18:57:05 INFO  c.s.s.service.MarketService - user SM tries to login from guestId=1
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: SM from guest 1 
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: SM 
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: SM 
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - start-isPasswordCorrect. username: SM 
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.PasswordHash - start-verifyPassword $2a$10$nYJ8X6gZe36WBg5B2l96Z.1muR.41Ev/nAvFGVH5eIqP5iUkZJR3a
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - end-isPasswordCorrect. returnedValue:true
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - end-Login.
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - start-generateToken. args: SM
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - end-auth. token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcyMDAyMjIyNSwiZXhwIjoxNzIwMTA4NjI1fQ.OuaodFc9wCWgCL3IB0srK7q0hLyFux8BunDqbtgT8tM
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.UserFacade - SM login from guest 1
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.UserFacade - check if field is valid
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.UserFacade - field SM is valid
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering isLoggedIn with username=SM
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@23d99731
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Member - Entering isLoggedIn
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting isLoggedIn with result=false
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting isLoggedIn with result=false
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - getting member cart for SM
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@23d99731
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.IUser - Entering get Cart Items
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Cart - getting cart items
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Cart - got cart items []
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.IUser - exiting get Cart Items: []
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - got member cart for SM: []
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - getting guest cart for 1
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getGuest with guestID=1
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getGuest with result=com.sadna.sadnamarket.domain.users.Guest@36e3da3f
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.IUser - Entering get Cart Items
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Cart - getting cart items
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Cart - got cart items []
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.IUser - exiting get Cart Items: []
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - got guest cart for 1: []
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering setCart with userName=SM, cart=[]
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@23d99731
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor with cartItems=[]
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Member - Entering setCart with cart=com.sadna.sadnamarket.domain.users.Cart@5d167a
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Cart - Entering isEmpty
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Cart - Exiting isEmpty with result=true
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting setCart
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting setCart
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering setLogin with userName=SM, isLoggedIn=true
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@23d99731
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Member - Entering setLogin with isLoggedIn=true
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting setLogin
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting setLogin
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.UserFacade - enter remove guest 1
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering deleteGuest with guestID=1
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering hasGuest with guestID=1
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasGuest with result=true
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting deleteGuest
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.UserFacade - removed guest 1
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.UserFacade - SM done login from guest 1
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - end-Login. returnedValue:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcyMDAyMjIyNSwiZXhwIjoxNzIwMTA4NjI1fQ.OuaodFc9wCWgCL3IB0srK7q0hLyFux8BunDqbtgT8tM
+2024-07-03 18:57:05 INFO  c.s.s.service.MarketService - user SM logged in
+2024-07-03 18:57:05 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 18:57:05 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcyMDAyMjIyNSwiZXhwIjoxNzIwMTA4NjI1fQ.OuaodFc9wCWgCL3IB0srK7q0hLyFux8BunDqbtgT8tM
+2024-07-03 18:57:05 INFO  c.s.s.domain.auth.AuthFacade - start-validateToken. args: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTSIsImlhdCI6MTcyMDAyMjIyNSwiZXhwIjoxNzIwMTA4NjI1fQ.OuaodFc9wCWgCL3IB0srK7q0hLyFux8BunDqbtgT8tM
+2024-07-03 18:57:05 INFO  c.s.s.service.MarketService - get user notifications for SM
+2024-07-03 18:57:05 INFO  c.s.s.service.MarketService - check if SM is system manager
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.UserFacade - getting notifications for SM
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.UserFacade - check if username is system manager SM
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getNotifications with username=SM
+2024-07-03 18:57:05 INFO  c.s.s.service.MarketService - finished check if SM is system manager
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@23d99731
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Member - Entering getNotifications
+2024-07-03 18:57:05 INFO  c.s.sadnamarket.domain.users.Member - Exiting getNotifications with result={}
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.MemoryRepo - Exiting getNotifications with result=[]
+2024-07-03 18:57:05 INFO  c.s.s.domain.users.UserFacade - got notifications for SM
+2024-07-03 18:57:05 INFO  c.s.s.service.MarketService - finished get user notifications []
+2024-07-03 18:57:14 INFO  c.s.s.service.MarketService - SM
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.UserFacade - SM logout 
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.MemoryRepo - Entering hasMember with username=SM
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.MemoryRepo - Exiting hasMember with result=true
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.MemoryRepo - Entering logout with userName=SM
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.MemoryRepo - Entering getMember with userName=SM
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.MemoryRepo - Exiting getMember with result=com.sadna.sadnamarket.domain.users.Member@23d99731
+2024-07-03 18:57:14 INFO  c.s.sadnamarket.domain.users.Member - Entering logout
+2024-07-03 18:57:14 INFO  c.s.sadnamarket.domain.users.Member - Entering setLogin with isLoggedIn=false
+2024-07-03 18:57:14 INFO  c.s.sadnamarket.domain.users.Member - Exiting setLogin
+2024-07-03 18:57:14 INFO  c.s.sadnamarket.domain.users.Member - Exiting logout
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.MemoryRepo - Exiting logout
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.UserFacade - SM done logout
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.UserFacade - enter as guest
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.MemoryRepo - Entering addGuest
+2024-07-03 18:57:14 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 18:57:14 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.MemoryRepo - creating new guest with guest_id: 2
+2024-07-03 18:57:14 INFO  c.s.sadnamarket.domain.users.Cart - Entering Cart constructor
+2024-07-03 18:57:14 INFO  c.s.sadnamarket.domain.users.Cart - Exiting Cart constructor
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.MemoryRepo - done creating new guest with guest_id: 2
+2024-07-03 18:57:14 INFO  c.s.s.domain.users.MemoryRepo - Exiting addGuest with result=2
+2024-07-03 18:57:14 INFO  c.s.s.service.MarketService - SM logged out
+2024-07-03 18:57:23 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 18:57:23 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 18:57:30 INFO  c.s.s.service.MarketService - get top products
+2024-07-03 18:57:30 INFO  c.s.s.service.MarketService - finished get top products
+2024-07-03 18:57:35 INFO  c.s.s.service.MarketService - user saas tries to login from guestId=2
+2024-07-03 18:57:35 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: saas from guest 2 
+2024-07-03 18:57:35 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: saas 
+2024-07-03 18:57:35 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: saas 
+2024-07-03 18:57:38 INFO  c.s.s.service.MarketService - user saas tries to login from guestId=2
+2024-07-03 18:57:38 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: saas from guest 2 
+2024-07-03 18:57:38 INFO  c.s.s.domain.auth.AuthFacade - start-auth. username: saas 
+2024-07-03 18:57:38 INFO  c.s.s.domain.auth.AuthFacade - start-Login. username: saas 
